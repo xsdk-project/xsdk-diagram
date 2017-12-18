@@ -1,26 +1,26 @@
 digraph G {
   labelloc = "b"
-  rankdir = "TB"
-  ranksep = "2"
+  rankdir = "LR"
+  ranksep = "1"
+  ratio = ".4"
   nodesep = ".1"
   bgcolor = "transparent"
 edge[
      penwidth = "2"
      color = "#666666"
-     arrowsize = "1.5"
+     arrowsize = "3"
 ]
 node[
      fontname=Arial,
      penwidth=2,
-     fontsize=24,
+     fontsize=48,
      margin=.1,
      shape=box,
      fillcolor=brown,
      fontcolor=white,
      style="rounded,filled"]
 
-
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" [label="xsdk"]
+  "62t576plccr4uv422lyu5fhrzkqqd67s" [label="xsdk"]
   "ntyfxrnkitiolkunvzbqlurcpq3p7uku" [label="alquimia" fillcolor="chartreuse4"]
   "yx24cojumegsr4zm2igoj3yaapi26r5x" [label="cmake" fillcolor="lightskyblue3"]
   "57sdonpes4vfa44pd62xawngsajub6sn" [label="ncurses" fillcolor="gray23"]
@@ -51,9 +51,11 @@ node[
   "vbtxh6u35vmkzwc2cno557w3ulgu3n2n" [label="libsigsegv" fillcolor="gray23"]
   "h3lswz7i7i45dp4vokforpjgw2xjozc5" [label="pflotran" fillcolor="chartreuse4"]
   "u5niuyjw72xouxleavts4j6nevl6reqh" [label="mfem" fillcolor="chartreuse4"]
+  "nbx4z3ioxtqaxpk3pd4kf6toutxh3d5n" [label="magma"fillcolor="chartreuse4"]
   "xolsx24azdxstakpax7ukj67xn4me677" [label="sundials" fillcolor="chartreuse4"]
 
   "pqmnsdonulivxgt4e5lossapwloshelt" -> "wjf52tiqr2ooqredkgu4nptytsyhefyb"
+  "yoao3x35t2al32rsq77mshxijx4nlgle" -> "dbddyt3qksfnipwxiw2ddgmmn6zb6q4f"
   "yoao3x35t2al32rsq77mshxijx4nlgle" -> "dxpaoysvipwyqcscj5n5j6t5cvqtldr2"
   "wc7nl4bmpdjeyiqvnn6r4ow6a6mvsgys" -> "vwblkonajep2vr5tyikyrdeuhja2azvy"
   "wm6eltg32lqxcgyavmsu67obo7ac4glm" -> "yx24cojumegsr4zm2igoj3yaapi26r5x"
@@ -61,6 +63,7 @@ node[
   "yoao3x35t2al32rsq77mshxijx4nlgle" -> "refftvwxwdiliykbefrhcevtax2qnoro"
   "yx24cojumegsr4zm2igoj3yaapi26r5x" -> "znjgdgey7vu4wl2zdqnhfry6qvo3lmyl"
   "h3lswz7i7i45dp4vokforpjgw2xjozc5" -> "euqkssj2u6n4gza4qvg6gvh6avu3blzv"
+  "nbx4z3ioxtqaxpk3pd4kf6toutxh3d5n" -> "yx24cojumegsr4zm2igoj3yaapi26r5x"
   "yoao3x35t2al32rsq77mshxijx4nlgle" -> "lkn2pvmbe32rx63epxfdukbtz2j6mtlk"
   "h3lswz7i7i45dp4vokforpjgw2xjozc5" -> "lkn2pvmbe32rx63epxfdukbtz2j6mtlk"
   "refftvwxwdiliykbefrhcevtax2qnoro" -> "euqkssj2u6n4gza4qvg6gvh6avu3blzv"
@@ -74,27 +77,27 @@ node[
   "u5niuyjw72xouxleavts4j6nevl6reqh" -> "dbddyt3qksfnipwxiw2ddgmmn6zb6q4f"
   "dbddyt3qksfnipwxiw2ddgmmn6zb6q4f" -> "dxpaoysvipwyqcscj5n5j6t5cvqtldr2"
   "wphvmp7lb2azylztivv3zjgyhopyz5g7" -> "kugj5icwtvhlfrkdy4qwa5reztj3poq2"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "nbx4z3ioxtqaxpk3pd4kf6toutxh3d5n"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "yoao3x35t2al32rsq77mshxijx4nlgle"
   "wjf52tiqr2ooqredkgu4nptytsyhefyb" -> "zdksw5l5yggxbfms5uxylp2xcso35qza"
   "wc7nl4bmpdjeyiqvnn6r4ow6a6mvsgys" -> "kugj5icwtvhlfrkdy4qwa5reztj3poq2"
   "yoao3x35t2al32rsq77mshxijx4nlgle" -> "tksfis6ar4azwzyofx2bxju5t72c6pcl"
   "f7b5g4roko3voqxoh47xzqkiggw6i2yo" -> "dbddyt3qksfnipwxiw2ddgmmn6zb6q4f"
   "yx24cojumegsr4zm2igoj3yaapi26r5x" -> "57sdonpes4vfa44pd62xawngsajub6sn"
   "refftvwxwdiliykbefrhcevtax2qnoro" -> "wm6eltg32lqxcgyavmsu67obo7ac4glm"
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" -> "u5niuyjw72xouxleavts4j6nevl6reqh"
   "u5niuyjw72xouxleavts4j6nevl6reqh" -> "euqkssj2u6n4gza4qvg6gvh6avu3blzv"
   "tksfis6ar4azwzyofx2bxju5t72c6pcl" -> "57sdonpes4vfa44pd62xawngsajub6sn"
   "ntyfxrnkitiolkunvzbqlurcpq3p7uku" -> "euqkssj2u6n4gza4qvg6gvh6avu3blzv"
   "yoao3x35t2al32rsq77mshxijx4nlgle" -> "f7b5g4roko3voqxoh47xzqkiggw6i2yo"
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" -> "xolsx24azdxstakpax7ukj67xn4me677"
+  "tksfis6ar4azwzyofx2bxju5t72c6pcl" -> "kugj5icwtvhlfrkdy4qwa5reztj3poq2"
   "f7b5g4roko3voqxoh47xzqkiggw6i2yo" -> "refftvwxwdiliykbefrhcevtax2qnoro"
   "ntyfxrnkitiolkunvzbqlurcpq3p7uku" -> "yx24cojumegsr4zm2igoj3yaapi26r5x"
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" -> "ntyfxrnkitiolkunvzbqlurcpq3p7uku"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "f7b5g4roko3voqxoh47xzqkiggw6i2yo"
   "wjf52tiqr2ooqredkgu4nptytsyhefyb" -> "kugj5icwtvhlfrkdy4qwa5reztj3poq2"
+  "nbx4z3ioxtqaxpk3pd4kf6toutxh3d5n" -> "dxpaoysvipwyqcscj5n5j6t5cvqtldr2"
   "znjgdgey7vu4wl2zdqnhfry6qvo3lmyl" -> "kugj5icwtvhlfrkdy4qwa5reztj3poq2"
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" -> "dbddyt3qksfnipwxiw2ddgmmn6zb6q4f"
   "ntyfxrnkitiolkunvzbqlurcpq3p7uku" -> "lkn2pvmbe32rx63epxfdukbtz2j6mtlk"
   "vwblkonajep2vr5tyikyrdeuhja2azvy" -> "vbtxh6u35vmkzwc2cno557w3ulgu3n2n"
-  "yoao3x35t2al32rsq77mshxijx4nlgle" -> "dbddyt3qksfnipwxiw2ddgmmn6zb6q4f"
   "pqmnsdonulivxgt4e5lossapwloshelt" -> "zdksw5l5yggxbfms5uxylp2xcso35qza"
   "tksfis6ar4azwzyofx2bxju5t72c6pcl" -> "znjgdgey7vu4wl2zdqnhfry6qvo3lmyl"
   "u5niuyjw72xouxleavts4j6nevl6reqh" -> "xolsx24azdxstakpax7ukj67xn4me677"
@@ -105,7 +108,6 @@ node[
   "lkn2pvmbe32rx63epxfdukbtz2j6mtlk" -> "kugj5icwtvhlfrkdy4qwa5reztj3poq2"
   "u5niuyjw72xouxleavts4j6nevl6reqh" -> "kugj5icwtvhlfrkdy4qwa5reztj3poq2"
   "xolsx24azdxstakpax7ukj67xn4me677" -> "yx24cojumegsr4zm2igoj3yaapi26r5x"
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" -> "f7b5g4roko3voqxoh47xzqkiggw6i2yo"
   "refftvwxwdiliykbefrhcevtax2qnoro" -> "yqc6zidhveung3szick4k6rqhautryzp"
   "ntyfxrnkitiolkunvzbqlurcpq3p7uku" -> "h3lswz7i7i45dp4vokforpjgw2xjozc5"
   "tksfis6ar4azwzyofx2bxju5t72c6pcl" -> "k42bho7lywu6laeutlfh7q3mivn3h3qk"
@@ -114,12 +116,10 @@ node[
   "f7b5g4roko3voqxoh47xzqkiggw6i2yo" -> "euqkssj2u6n4gza4qvg6gvh6avu3blzv"
   "f7b5g4roko3voqxoh47xzqkiggw6i2yo" -> "lkn2pvmbe32rx63epxfdukbtz2j6mtlk"
   "xolsx24azdxstakpax7ukj67xn4me677" -> "dbddyt3qksfnipwxiw2ddgmmn6zb6q4f"
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" -> "yoao3x35t2al32rsq77mshxijx4nlgle"
   "tksfis6ar4azwzyofx2bxju5t72c6pcl" -> "jl7jv54jscaiflwnn7fywyho67xof4j7"
   "u5niuyjw72xouxleavts4j6nevl6reqh" -> "refftvwxwdiliykbefrhcevtax2qnoro"
   "wm6eltg32lqxcgyavmsu67obo7ac4glm" -> "yqc6zidhveung3szick4k6rqhautryzp"
   "f7b5g4roko3voqxoh47xzqkiggw6i2yo" -> "yx24cojumegsr4zm2igoj3yaapi26r5x"
-  "tksfis6ar4azwzyofx2bxju5t72c6pcl" -> "kugj5icwtvhlfrkdy4qwa5reztj3poq2"
   "wphvmp7lb2azylztivv3zjgyhopyz5g7" -> "k42bho7lywu6laeutlfh7q3mivn3h3qk"
   "u5niuyjw72xouxleavts4j6nevl6reqh" -> "yoao3x35t2al32rsq77mshxijx4nlgle"
   "yqc6zidhveung3szick4k6rqhautryzp" -> "yx24cojumegsr4zm2igoj3yaapi26r5x"
@@ -128,15 +128,19 @@ node[
   "ayd6vcmdbrc3o2skzgtstlfbkqxmcsoz" -> "yx24cojumegsr4zm2igoj3yaapi26r5x"
   "57sdonpes4vfa44pd62xawngsajub6sn" -> "zdksw5l5yggxbfms5uxylp2xcso35qza"
   "yoao3x35t2al32rsq77mshxijx4nlgle" -> "euqkssj2u6n4gza4qvg6gvh6avu3blzv"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "ntyfxrnkitiolkunvzbqlurcpq3p7uku"
   "u5niuyjw72xouxleavts4j6nevl6reqh" -> "yqc6zidhveung3szick4k6rqhautryzp"
   "tksfis6ar4azwzyofx2bxju5t72c6pcl" -> "7c34eyli5qmhrx54rwp2sbmgbp3im73z"
   "xolsx24azdxstakpax7ukj67xn4me677" -> "euqkssj2u6n4gza4qvg6gvh6avu3blzv"
   "u5niuyjw72xouxleavts4j6nevl6reqh" -> "wm6eltg32lqxcgyavmsu67obo7ac4glm"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "h3lswz7i7i45dp4vokforpjgw2xjozc5"
   "yoao3x35t2al32rsq77mshxijx4nlgle" -> "yqc6zidhveung3szick4k6rqhautryzp"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "dbddyt3qksfnipwxiw2ddgmmn6zb6q4f"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "refftvwxwdiliykbefrhcevtax2qnoro"
   "jl7jv54jscaiflwnn7fywyho67xof4j7" -> "57sdonpes4vfa44pd62xawngsajub6sn"
   "yoao3x35t2al32rsq77mshxijx4nlgle" -> "wm6eltg32lqxcgyavmsu67obo7ac4glm"
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" -> "refftvwxwdiliykbefrhcevtax2qnoro"
-  "tdqkrnk4utrrmpqzskzlp7zsdk7ljppn" -> "h3lswz7i7i45dp4vokforpjgw2xjozc5"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "u5niuyjw72xouxleavts4j6nevl6reqh"
+  "62t576plccr4uv422lyu5fhrzkqqd67s" -> "xolsx24azdxstakpax7ukj67xn4me677"
   "wc7nl4bmpdjeyiqvnn6r4ow6a6mvsgys" -> "lkn2pvmbe32rx63epxfdukbtz2j6mtlk"
   "refftvwxwdiliykbefrhcevtax2qnoro" -> "dxpaoysvipwyqcscj5n5j6t5cvqtldr2"
   "4lfjkvcfepgtcpqtrbb3z4qmwbdaxumf" -> "lkn2pvmbe32rx63epxfdukbtz2j6mtlk"
