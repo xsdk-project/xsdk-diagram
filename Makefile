@@ -1,4 +1,4 @@
-TARGETS=legend.pdf xsdk.pdf xsdk-onlypkgs.pdf
+TARGETS=legend.pdf xsdk.pdf xsdk_pkgsonly.pdf
 
 all: $(TARGETS)
 
