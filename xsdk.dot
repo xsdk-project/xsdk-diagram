@@ -3,10 +3,10 @@ digraph G {
   rankdir = "TB"
   ranksep = "1"
   ratio = ".9"
-  nodesep = ".1"
+  nodesep = ".2"
   bgcolor = "transparent"
 edge[
-     penwidth = "2"
+     penwidth = "1"
      color = "#666666"
      arrowsize = "2"
 ]
@@ -20,230 +20,1236 @@ node[
      fontcolor=white,
      style="rounded,filled"]
 
-  "xsdk" [label="xsdk"]
-  "alquimia" [label="alquimia",fillcolor="chartreuse4"]
-  "cmake" [label="cmake",fillcolor="lightskyblue3"]
-  "ncurses" [label="ncurses",fillcolor="gray23"]
-  "pkgconf" [label="pkgconf",fillcolor="gray23"]
-  "openssl" [label="openssl",fillcolor="gray23"]
-  "perl" [label="perl",fillcolor="gray23"]
-  "gdbm" [label="gdbm",fillcolor="gray23"]
-  "readline" [label="readline",fillcolor="gray23"]
-  "zlib" [label="zlib",fillcolor="gray23"]
-  "hdf5" [label="hdf5",fillcolor="gray23"]
-  "openmpi" [label="openmpi",fillcolor="gray23"]
-  "hwloc" [label="hwloc",fillcolor="gray23"]
-  "libxml2" [label="libxml2",fillcolor="gray23"]
-  "xz" [label="xz",fillcolor="gray23"]
-  "petsc" [label="petsc",fillcolor="chartreuse4"]
-  "hypre" [label="hypre",fillcolor="chartreuse4"]
-  "openblas" [label="openblas",fillcolor="gray23"]
-  "metis" [label="metis",fillcolor="gray23"]
-  "parmetis" [label="parmetis",fillcolor="gray23"]
-  "python" [label="python",fillcolor="lightskyblue3"]
-  "bzip2" [label="bzip2",fillcolor="gray23"]
-  "diffutils" [label="diffutils",fillcolor="gray23"]
-  "sqlite" [label="sqlite",fillcolor="gray23"]
-  "superlu-dist" [label="superlu-dist",fillcolor="chartreuse4"]
-  "trilinos" [label="trilinos",fillcolor="chartreuse4"]
-  "boost" [label="boost",fillcolor="gray23"]
-  "glm" [label="glm",fillcolor="gray23"]
-  "matio" [label="matio",fillcolor="gray23"]
-  "netcdf" [label="netcdf",fillcolor="gray23"]
+  "zoltan" [label="zoltan",fillcolor="gray23"]
+  "xproto" [label="xproto",fillcolor="gray23"]
   "m4" [label="m4",fillcolor="gray23"]
-  "libsigsegv" [label="libsigsegv",fillcolor="gray23"]
-  "pflotran" [label="pflotran",fillcolor="chartreuse4"]
-  "dealii" [label="dealii",fillcolor="chartreuse4"]
-  "adol-c" [label="adol-c",fillcolor="gray23"]
-  "autoconf" [label="autoconf",fillcolor="gray23"]
-  "automake" [label="automake",fillcolor="gray23"]
-  "libtool" [label="libtool",fillcolor="gray23"]
-  "arpack-ng" [label="arpack-ng",fillcolor="gray23"]
-  "gsl" [label="gsl",fillcolor="gray23"]
-  "intel-tbb" [label="intel-tbb",fillcolor="gray23"]
-  "muparser" [label="muparser",fillcolor="gray23"]
-  "nanoflann" [label="nanoflann",fillcolor="gray23"]
-  "netlib-scalapack" [label="netlib-scalapack",fillcolor="gray23"]
-  "oce" [label="oce",fillcolor="gray23"]
-  "p4est" [label="p4est",fillcolor="gray23"]
+  "py-traceback2" [label="py-traceback2",fillcolor="gray23"]
+  "libpthread-stubs" [label="libpthread-stubs",fillcolor="gray23"]
+  "libxdamage" [label="libxdamage",fillcolor="gray23"]
+  "libxv" [label="libxv",fillcolor="gray23"]
+  "py-pytz" [label="py-pytz",fillcolor="gray23"]
+  "py-typing" [label="py-typing",fillcolor="gray23"]
   "suite-sparse" [label="suite-sparse",fillcolor="gray23"]
-  "sundials" [label="sundials",fillcolor="chartreuse4"]
-  "mfem" [label="mfem",fillcolor="chartreuse4"]
-  "omega-h" [label="omega-h",fillcolor="chartreuse4"]
-  "phist" [label="phist",fillcolor="chartreuse4"]
+  "hwloc" [label="hwloc",fillcolor="gray23"]
+  "autoconf" [label="autoconf",fillcolor="gray23"]
+  "ncurses" [label="ncurses",fillcolor="gray23"]
+  "swig" [label="swig",fillcolor="gray23"]
+  "bzip2" [label="bzip2",fillcolor="gray23"]
+  "nanoflann" [label="nanoflann",fillcolor="gray23"]
+  "sqlite" [label="sqlite",fillcolor="gray23"]
+  "adol-c" [label="adol-c",fillcolor="gray23"]
+  "eigen" [label="eigen",fillcolor="gray23"]
+  "lzma" [label="lzma",fillcolor="gray23"]
+  "libepoxy" [label="libepoxy",fillcolor="gray23"]
+  "alquimia" [label="alquimia",fillcolor="chartreuse4"]
+  "unzip" [label="unzip",fillcolor="gray23"]
+  "xextproto" [label="xextproto",fillcolor="gray23"]
+  "hdf" [label="hdf",fillcolor="gray23"]
+  "mpfr" [label="mpfr",fillcolor="gray23"]
+  "libx11" [label="libx11",fillcolor="gray23"]
+  "dealii" [label="dealii",fillcolor="chartreuse4"]
+  "mesa" [label="mesa",fillcolor="gray23"]
+  "py-six" [label="py-six",fillcolor="gray23"]
+  "py-cython" [label="py-cython",fillcolor="gray23"]
+  "sowing" [label="sowing",fillcolor="gray23"]
+  "pcre" [label="pcre",fillcolor="gray23"]
+  "damageproto" [label="damageproto",fillcolor="gray23"]
+  "netcdf" [label="netcdf",fillcolor="gray23"]
+  "inputproto" [label="inputproto",fillcolor="gray23"]
+  "py-zope-interface" [label="py-zope-interface",fillcolor="gray23"]
+  "libxml2" [label="libxml2",fillcolor="gray23"]
+  "szip" [label="szip",fillcolor="gray23"]
+  "py-atomicwrites" [label="py-atomicwrites",fillcolor="gray23"]
   "pumi" [label="pumi",fillcolor="chartreuse4"]
-  "slepc" [label="slepc",fillcolor="chartreuse4"]
-  "strumpack" [label="strumpack",fillcolor="chartreuse4"]
+  "oce" [label="oce",fillcolor="gray23"]
+  "py-zope-event" [label="py-zope-event",fillcolor="gray23"]
+  "tar" [label="tar",fillcolor="gray23"]
+  "py-mock" [label="py-mock",fillcolor="gray23"]
+  "hypre" [label="hypre",fillcolor="chartreuse4"]
+  "py-pympler" [label="py-pympler",fillcolor="gray23"]
+  "mumps" [label="mumps",fillcolor="gray23"]
+  "lapack" [label="lapack",fillcolor="gray23"]
+  "lzo" [label="lzo",fillcolor="gray23"]
+  "xz" [label="xz",fillcolor="gray23"]
+  "gmp" [label="gmp",fillcolor="gray23"]
+  "atk" [label="atk",fillcolor="gray23"]
+  "ninja" [label="ninja",fillcolor="gray23"]
+  "py-itsdangerous" [label="py-itsdangerous",fillcolor="gray23"]
+  "perl" [label="perl",fillcolor="gray23"]
+  "py-hypothesis" [label="py-hypothesis",fillcolor="gray23"]
+  "netcdf-cxx" [label="netcdf-cxx",fillcolor="gray23"]
+  "petsc" [label="petsc",fillcolor="chartreuse4"]
+  "renderproto" [label="renderproto",fillcolor="gray23"]
+  "shared-mime-info" [label="shared-mime-info",fillcolor="gray23"]
+  "texinfo" [label="texinfo",fillcolor="gray23"]
+  "py-snowballstemmer" [label="py-snowballstemmer",fillcolor="gray23"]
+  "tetgen" [label="tetgen",fillcolor="gray23"]
+  "py-numpy" [label="py-numpy",fillcolor="gray23"]
+  "libssh2" [label="libssh2",fillcolor="gray23"]
+  "fontconfig" [label="fontconfig",fillcolor="gray23"]
+  "libxext" [label="libxext",fillcolor="gray23"]
+  "util-macros" [label="util-macros",fillcolor="gray23"]
+  "font-util" [label="font-util",fillcolor="gray23"]
+  "sed" [label="sed",fillcolor="gray23"]
+  "libedit" [label="libedit",fillcolor="gray23"]
+  "py-docutils" [label="py-docutils",fillcolor="gray23"]
+  "py-ordereddict" [label="py-ordereddict",fillcolor="gray23"]
+  "py-alabaster" [label="py-alabaster",fillcolor="gray23"]
+  "raja" [label="raja",fillcolor="gray23"]
+  "py-pytest-httpbin" [label="py-pytest-httpbin",fillcolor="gray23"]
+  "py-scandir" [label="py-scandir",fillcolor="gray23"]
+  "help2man" [label="help2man",fillcolor="gray23"]
+  "mfem" [label="mfem",fillcolor="chartreuse4"]
+  "lz4" [label="lz4",fillcolor="gray23"]
+  "libuv" [label="libuv",fillcolor="gray23"]
+  "libiconv" [label="libiconv",fillcolor="gray23"]
+  "py-httpbin" [label="py-httpbin",fillcolor="gray23"]
+  "omega-h" [label="omega-h",fillcolor="chartreuse4"]
+  "gts" [label="gts",fillcolor="gray23"]
+  "lua" [label="lua",fillcolor="gray23"]
+  "libssh" [label="libssh",fillcolor="gray23"]
+  "flex" [label="flex",fillcolor="gray23"]
+  "rhash" [label="rhash",fillcolor="gray23"]
+  "libxvmc" [label="libxvmc",fillcolor="gray23"]
+  "py-lit" [label="py-lit",fillcolor="gray23"]
+  "py-argparse" [label="py-argparse",fillcolor="gray23"]
+  "tcl" [label="tcl",fillcolor="gray23"]
+  "libffi" [label="libffi",fillcolor="gray23"]
+  "pkgconfig" [label="pkgconfig",fillcolor="gray23"]
+  "libtiff" [label="libtiff",fillcolor="gray23"]
+  "conduit" [label="conduit",fillcolor="gray23"]
+  "magma" [label="magma",fillcolor="chartreuse4"]
+  "py-attrs" [label="py-attrs",fillcolor="gray23"]
+  "libxdmcp" [label="libxdmcp",fillcolor="gray23"]
+  "gsl" [label="gsl",fillcolor="gray23"]
+  "libxi" [label="libxi",fillcolor="gray23"]
+  "phist" [label="phist",fillcolor="chartreuse4"]
+  "dbus" [label="dbus",fillcolor="gray23"]
+  "py-py" [label="py-py",fillcolor="gray23"]
+  "zlib" [label="zlib",fillcolor="gray23"]
+  "gperf" [label="gperf",fillcolor="gray23"]
+  "blas" [label="blas",fillcolor="gray23"]
+  "fixesproto" [label="fixesproto",fillcolor="gray23"]
+  "libxau" [label="libxau",fillcolor="gray23"]
+  "scalapack" [label="scalapack",fillcolor="gray23"]
+  "muparser" [label="muparser",fillcolor="gray23"]
+  "expat" [label="expat",fillcolor="gray23"]
+  "util-linux" [label="util-linux",fillcolor="gray23"]
+  "nettle" [label="nettle",fillcolor="gray23"]
+  "at-spi2-atk" [label="at-spi2-atk",fillcolor="gray23"]
+  "silo" [label="silo",fillcolor="gray23"]
+  "libxft" [label="libxft",fillcolor="gray23"]
+  "fftw" [label="fftw",fillcolor="gray23"]
+  "numactl" [label="numactl",fillcolor="gray23"]
+  "py-setuptools-scm" [label="py-setuptools-scm",fillcolor="gray23"]
+  "parallel-netcdf" [label="parallel-netcdf",fillcolor="gray23"]
+  "valgrind" [label="valgrind",fillcolor="gray23"]
+  "glib" [label="glib",fillcolor="gray23"]
+  "py-pygments" [label="py-pygments",fillcolor="gray23"]
+  "curl" [label="curl",fillcolor="gray23"]
+  "perl-xml-parser" [label="perl-xml-parser",fillcolor="gray23"]
+  "py-html5lib" [label="py-html5lib",fillcolor="gray23"]
+  "cuda" [label="cuda",fillcolor="gray23"]
   "tasmanian" [label="tasmanian",fillcolor="chartreuse4"]
+  "libmng" [label="libmng",fillcolor="gray23"]
+  "pflotran" [label="pflotran",fillcolor="chartreuse4"]
+  "py-sphinx" [label="py-sphinx",fillcolor="gray23"]
+  "videoproto" [label="videoproto",fillcolor="gray23"]
+  "cmake" [label="cmake",fillcolor="lightskyblue3"]
+  "freetype" [label="freetype",fillcolor="gray23"]
+  "py-werkzeug" [label="py-werkzeug",fillcolor="gray23"]
+  "diffutils" [label="diffutils",fillcolor="gray23"]
+  "cgns" [label="cgns",fillcolor="gray23"]
+  "superlu-mt" [label="superlu-mt",fillcolor="gray23"]
+  "graphviz" [label="graphviz",fillcolor="gray23"]
+  "gnutls" [label="gnutls",fillcolor="gray23"]
+  "py-appdirs" [label="py-appdirs",fillcolor="gray23"]
+  "py-pluggy" [label="py-pluggy",fillcolor="gray23"]
+  "dri3proto" [label="dri3proto",fillcolor="gray23"]
+  "py-setuptools" [label="py-setuptools",fillcolor="gray23"]
+  "libunistring" [label="libunistring",fillcolor="gray23"]
+  "libsigsegv" [label="libsigsegv",fillcolor="gray23"]
+  "py-sphinx-rtd-theme" [label="py-sphinx-rtd-theme",fillcolor="gray23"]
+  "gmsh" [label="gmsh",fillcolor="gray23"]
+  "libpng" [label="libpng",fillcolor="gray23"]
+  "binutils" [label="binutils",fillcolor="gray23"]
+  "amrex" [label="amrex",fillcolor="chartreuse4"]
+  "libarchive" [label="libarchive",fillcolor="gray23"]
+  "py-decorator" [label="py-decorator",fillcolor="gray23"]
+  "cairo" [label="cairo",fillcolor="gray23"]
+  "parmetis" [label="parmetis",fillcolor="gray23"]
+  "boost" [label="boost",fillcolor="gray23"]
+  "recordproto" [label="recordproto",fillcolor="gray23"]
+  "fltk" [label="fltk",fillcolor="gray23"]
+  "gettext" [label="gettext",fillcolor="gray23"]
+  "slepc" [label="slepc",fillcolor="chartreuse4"]
+  "py-requests" [label="py-requests",fillcolor="gray23"]
+  "intltool" [label="intltool",fillcolor="gray23"]
+  "meson" [label="meson",fillcolor="gray23"]
+  "py-enum34" [label="py-enum34",fillcolor="gray23"]
+  "xtrans" [label="xtrans",fillcolor="gray23"]
+  "pango" [label="pango",fillcolor="gray23"]
+  "glproto" [label="glproto",fillcolor="gray23"]
+  "netgen" [label="netgen",fillcolor="gray23"]
+  "py-pytest" [label="py-pytest",fillcolor="gray23"]
+  "ghost" [label="ghost",fillcolor="gray23"]
+  "unwind" [label="unwind",fillcolor="gray23"]
+  "py-linecache2" [label="py-linecache2",fillcolor="gray23"]
+  "mpi" [label="mpi",fillcolor="gray23"]
+  "libbsd" [label="libbsd",fillcolor="gray23"]
+  "py-mako" [label="py-mako",fillcolor="gray23"]
+  "py-pytest-cov" [label="py-pytest-cov",fillcolor="gray23"]
+  "sundials" [label="sundials",fillcolor="chartreuse4"]
+  "py-click" [label="py-click",fillcolor="gray23"]
+  "py-pathlib2" [label="py-pathlib2",fillcolor="gray23"]
+  "xcb-proto" [label="xcb-proto",fillcolor="gray23"]
+  "python" [label="python",fillcolor="lightskyblue3"]
+  "gl" [label="gl",fillcolor="gray23"]
+  "automake" [label="automake",fillcolor="gray23"]
+  "libgd" [label="libgd",fillcolor="gray23"]
+  "arpack-ng" [label="arpack-ng",fillcolor="gray23"]
+  "py-pbr" [label="py-pbr",fillcolor="gray23"]
+  "libxtst" [label="libxtst",fillcolor="gray23"]
+  "libxcb" [label="libxcb",fillcolor="gray23"]
+  "glm" [label="glm",fillcolor="gray23"]
+  "nghttp2" [label="nghttp2",fillcolor="gray23"]
+  "tbb" [label="tbb",fillcolor="gray23"]
+  "libxrender" [label="libxrender",fillcolor="gray23"]
+  "gdbm" [label="gdbm",fillcolor="gray23"]
+  "py-pyparsing" [label="py-pyparsing",fillcolor="gray23"]
+  "libtool" [label="libtool",fillcolor="gray23"]
+  "superlu-dist" [label="superlu-dist",fillcolor="chartreuse4"]
+  "gdk-pixbuf" [label="gdk-pixbuf",fillcolor="gray23"]
+  "libelf" [label="libelf",fillcolor="gray23"]
+  "matio" [label="matio",fillcolor="gray23"]
+  "py-coverage" [label="py-coverage",fillcolor="gray23"]
+  "py-flask" [label="py-flask",fillcolor="gray23"]
+  "java" [label="java",fillcolor="gray23"]
+  "py-more-itertools" [label="py-more-itertools",fillcolor="gray23"]
+  "libdrm" [label="libdrm",fillcolor="gray23"]
+  "py-pytest-mock" [label="py-pytest-mock",fillcolor="gray23"]
+  "plasma" [label="plasma",fillcolor="chartreuse4"]
+  "libxshmfence" [label="libxshmfence",fillcolor="gray23"]
+  "jpeg" [label="jpeg",fillcolor="gray23"]
+  "lcms" [label="lcms",fillcolor="gray23"]
+  "readline" [label="readline",fillcolor="gray23"]
+  "hdf5" [label="hdf5",fillcolor="gray23"]
+  "xsdk" [label="xsdk"]
+  "gobject-introspection" [label="gobject-introspection",fillcolor="gray23"]
+  "doxygen" [label="doxygen",fillcolor="gray23"]
+  "kbproto" [label="kbproto",fillcolor="gray23"]
+  "bison" [label="bison",fillcolor="gray23"]
+  "harfbuzz" [label="harfbuzz",fillcolor="gray23"]
+  "p4est" [label="p4est",fillcolor="gray23"]
+  "py-nose" [label="py-nose",fillcolor="gray23"]
+  "py-funcsigs" [label="py-funcsigs",fillcolor="gray23"]
+  "presentproto" [label="presentproto",fillcolor="gray23"]
+  "py-imagesize" [label="py-imagesize",fillcolor="gray23"]
+  "qt" [label="qt",fillcolor="gray23"]
+  "libpciaccess" [label="libpciaccess",fillcolor="gray23"]
+  "pixman" [label="pixman",fillcolor="gray23"]
+  "scotch" [label="scotch",fillcolor="gray23"]
+  "superlu" [label="superlu",fillcolor="gray23"]
+  "libxfixes" [label="libxfixes",fillcolor="gray23"]
+  "py-jinja2" [label="py-jinja2",fillcolor="gray23"]
+  "icu4c" [label="icu4c",fillcolor="gray23"]
+  "openssl" [label="openssl",fillcolor="gray23"]
+  "py-unittest2" [label="py-unittest2",fillcolor="gray23"]
+  "trilinos" [label="trilinos",fillcolor="chartreuse4"]
+  "py-simplejson" [label="py-simplejson",fillcolor="gray23"]
+  "dri2proto" [label="dri2proto",fillcolor="gray23"]
+  "strumpack" [label="strumpack",fillcolor="chartreuse4"]
+  "gtkplus" [label="gtkplus",fillcolor="gray23"]
+  "py-markupsafe" [label="py-markupsafe",fillcolor="gray23"]
+  "ghostscript" [label="ghostscript",fillcolor="gray23"]
+  "llvm" [label="llvm",fillcolor="gray23"]
+  "tk" [label="tk",fillcolor="gray23"]
+  "at-spi2-core" [label="at-spi2-core",fillcolor="gray23"]
+  "py-packaging" [label="py-packaging",fillcolor="gray23"]
+  "metis" [label="metis",fillcolor="gray23"]
+  "py-sphinxcontrib-websupport" [label="py-sphinxcontrib-websupport",fillcolor="gray23"]
+  "py-babel" [label="py-babel",fillcolor="gray23"]
+  "assimp" [label="assimp",fillcolor="gray23"]
+  "isl" [label="isl",fillcolor="gray23"]
 
-  "mfem" -> "metis"
-  "dealii" -> "openmpi"
-  "p4est" -> "zlib"
-  "xsdk" -> "superlu-dist"
-  "perl" -> "gdbm"
-  "sundials" -> "openmpi"
-  "suite-sparse" -> "cmake"
-  "mfem" -> "petsc"
-  "suite-sparse" -> "metis"
-  "alquimia" -> "openmpi"
-  "glm" -> "cmake"
-  "readline" -> "ncurses"
-  "petsc" -> "hdf5"
-  "dealii" -> "suite-sparse"
-  "mfem" -> "sundials"
-  "cmake" -> "ncurses"
-  "slepc" -> "arpack-ng"
-  "netlib-scalapack" -> "openblas"
-  "gdbm" -> "readline"
-  "nanoflann" -> "cmake"
-  "strumpack" -> "openblas"
-  "metis" -> "cmake"
-  "parmetis" -> "cmake"
-  "parmetis" -> "metis"
-  "boost" -> "zlib"
-  "automake" -> "perl"
-  "sundials" -> "hypre"
-  "xsdk" -> "mfem"
-  "dealii" -> "oce"
-  "dealii" -> "intel-tbb"
-  "superlu-dist" -> "parmetis"
-  "superlu-dist" -> "metis"
-  "adol-c" -> "m4"
-  "boost" -> "bzip2"
-  "mfem" -> "openmpi"
-  "strumpack" -> "metis"
-  "xsdk" -> "hypre"
-  "python" -> "sqlite"
-  "omega-h" -> "cmake"
-  "strumpack" -> "cmake"
-  "petsc" -> "openblas"
-  "xsdk" -> "strumpack"
-  "libxml2" -> "zlib"
-  "dealii" -> "metis"
-  "dealii" -> "cmake"
-  "xsdk" -> "sundials"
-  "trilinos" -> "netcdf"
-  "dealii" -> "gsl"
-  "phist" -> "cmake"
-  "m4" -> "libsigsegv"
-  "oce" -> "cmake"
-  "arpack-ng" -> "openblas"
-  "xsdk" -> "petsc"
-  "openssl" -> "zlib"
-  "mfem" -> "superlu-dist"
-  "hypre" -> "openblas"
-  "strumpack" -> "netlib-scalapack"
-  "openmpi" -> "hwloc"
-  "petsc" -> "superlu-dist"
-  "python" -> "ncurses"
-  "libxml2" -> "pkgconf"
-  "dealii" -> "zlib"
-  "petsc" -> "python"
-  "netcdf" -> "openmpi"
-  "sqlite" -> "readline"
-  "arpack-ng" -> "cmake"
-  "hypre" -> "openmpi"
-  "cmake" -> "openssl"
-  "netlib-scalapack" -> "cmake"
-  "openssl" -> "perl"
-  "bzip2" -> "diffutils"
-  "superlu-dist" -> "openblas"
-  "python" -> "bzip2"
-  "omega-h" -> "zlib"
-  "ncurses" -> "pkgconf"
-  "trilinos" -> "cmake"
-  "python" -> "openssl"
-  "petsc" -> "metis"
-  "petsc" -> "parmetis"
-  "p4est" -> "automake"
-  "hdf5" -> "zlib"
-  "trilinos" -> "superlu-dist"
-  "xsdk" -> "tasmanian"
-  "trilinos" -> "hypre"
-  "dealii" -> "netlib-scalapack"
-  "hwloc" -> "libxml2"
-  "pumi" -> "openmpi"
-  "libxml2" -> "xz"
-  "petsc" -> "zlib"
-  "superlu-dist" -> "cmake"
-  "netcdf" -> "zlib"
-  "pflotran" -> "petsc"
-  "dealii" -> "nanoflann"
-  "slepc" -> "petsc"
-  "trilinos" -> "openblas"
-  "dealii" -> "arpack-ng"
-  "p4est" -> "autoconf"
-  "mfem" -> "zlib"
-  "adol-c" -> "automake"
-  "alquimia" -> "pflotran"
-  "adol-c" -> "libtool"
-  "xsdk" -> "slepc"
-  "python" -> "zlib"
-  "autoconf" -> "m4"
-  "dealii" -> "trilinos"
-  "trilinos" -> "openmpi"
-  "netlib-scalapack" -> "openmpi"
-  "phist" -> "openblas"
-  "phist" -> "trilinos"
-  "xsdk" -> "alquimia"
-  "netcdf" -> "m4"
-  "petsc" -> "hypre"
-  "xsdk" -> "phist"
-  "netcdf" -> "hdf5"
-  "suite-sparse" -> "openblas"
-  "pflotran" -> "hdf5"
-  "mfem" -> "hypre"
-  "alquimia" -> "cmake"
-  "xsdk" -> "omega-h"
-  "p4est" -> "libtool"
-  "python" -> "readline"
-  "dealii" -> "hdf5"
-  "trilinos" -> "glm"
-  "matio" -> "hdf5"
-  "dealii" -> "adol-c"
-  "slepc" -> "python"
-  "dealii" -> "muparser"
-  "adol-c" -> "autoconf"
-  "python" -> "pkgconf"
-  "arpack-ng" -> "openmpi"
-  "alquimia" -> "hdf5"
-  "dealii" -> "sundials"
-  "petsc" -> "openmpi"
-  "matio" -> "zlib"
-  "p4est" -> "openmpi"
-  "tasmanian" -> "cmake"
-  "automake" -> "autoconf"
-  "xsdk" -> "pumi"
-  "dealii" -> "p4est"
-  "openmpi" -> "zlib"
-  "dealii" -> "petsc"
-  "sundials" -> "cmake"
   "petsc" -> "trilinos"
-  "hwloc" -> "pkgconf"
+  "dealii" -> "gsl"
+  "ghostscript" -> "zlib"
+  "py-sphinx" -> "py-mock"
+  "mfem" -> "lapack"
+  "py-nose" -> "py-setuptools"
+  "py-funcsigs" -> "py-setuptools"
+  "lcms" -> "zlib"
+  "dealii" -> "tbb"
+  "dri3proto" -> "util-macros"
+  "libxext" -> "xproto"
+  "mumps" -> "lapack"
+  "py-attrs" -> "py-pytest"
+  "libxtst" -> "libx11"
+  "py-hypothesis" -> "py-enum34"
+  "mumps" -> "scalapack"
+  "cairo" -> "libxcb"
+  "py-pathlib2" -> "py-six"
+  "libpciaccess" -> "util-macros"
+  "netcdf" -> "zlib"
+  "hwloc" -> "libpciaccess"
+  "doxygen" -> "cmake"
+  "mfem" -> "zlib"
+  "fftw" -> "automake"
+  "py-flask" -> "py-setuptools"
+  "ninja" -> "python"
+  "libx11" -> "inputproto"
+  "libxfixes" -> "libx11"
+  "gmp" -> "autoconf"
+  "hwloc" -> "libxml2"
+  "raja" -> "cmake"
+  "py-mako" -> "py-pytest"
+  "py-pytest" -> "py-atomicwrites"
+  "py-scandir" -> "python"
+  "libxtst" -> "xextproto"
+  "presentproto" -> "util-macros"
+  "mumps" -> "blas"
+  "py-requests" -> "python"
+  "boost" -> "mpi"
+  "mesa" -> "libxshmfence"
+  "libxft" -> "libxrender"
+  "py-requests" -> "py-pytest-httpbin"
+  "mesa" -> "llvm"
+  "dealii" -> "oce"
+  "fontconfig" -> "libxml2"
+  "plasma" -> "cmake"
+  "py-httpbin" -> "py-six"
+  "py-sphinx" -> "python"
+  "dealii" -> "cmake"
+  "py-zope-interface" -> "py-zope-event"
+  "libuv" -> "libtool"
+  "silo" -> "qt"
+  "graphviz" -> "qt"
+  "qt" -> "dbus"
+  "libxml2" -> "xz"
+  "py-unittest2" -> "py-enum34"
   "trilinos" -> "parmetis"
-  "trilinos" -> "metis"
-  "hdf5" -> "openmpi"
-  "pumi" -> "cmake"
-  "trilinos" -> "matio"
+  "fontconfig" -> "gperf"
+  "libxrender" -> "util-macros"
+  "py-setuptools" -> "python"
+  "py-pytest" -> "py-py"
+  "gmsh" -> "gmp"
   "python" -> "gdbm"
-  "alquimia" -> "petsc"
-  "xsdk" -> "dealii"
-  "libtool" -> "m4"
-  "superlu-dist" -> "openmpi"
-  "tasmanian" -> "openblas"
-  "trilinos" -> "boost"
-  "muparser" -> "cmake"
-  "parmetis" -> "openmpi"
-  "xsdk" -> "trilinos"
-  "trilinos" -> "hdf5"
-  "omega-h" -> "openmpi"
-  "strumpack" -> "openmpi"
+  "libgd" -> "fontconfig"
+  "help2man" -> "gettext"
+  "dealii" -> "netcdf"
+  "gdk-pixbuf" -> "gobject-introspection"
+  "renderproto" -> "util-macros"
+  "libxi" -> "inputproto"
+  "py-imagesize" -> "py-setuptools"
+  "py-jinja2" -> "py-babel"
+  "gtkplus" -> "pkgconfig"
+  "libxcb" -> "util-macros"
+  "cairo" -> "libx11"
+  "cairo" -> "pixman"
+  "py-sphinx" -> "py-setuptools"
+  "texinfo" -> "perl"
+  "numactl" -> "autoconf"
+  "graphviz" -> "libpng"
+  "autoconf" -> "m4"
+  "mfem" -> "superlu-dist"
+  "petsc" -> "mpi"
+  "libxvmc" -> "libxv"
+  "pflotran" -> "petsc"
+  "py-more-itertools" -> "py-setuptools"
+  "dealii" -> "adol-c"
+  "py-sphinx" -> "py-html5lib"
+  "magma" -> "cmake"
+  "py-werkzeug" -> "py-setuptools"
+  "py-py" -> "python"
+  "ncurses" -> "pkgconfig"
+  "py-httpbin" -> "py-itsdangerous"
+  "omega-h" -> "zlib"
+  "parallel-netcdf" -> "mpi"
+  "libxau" -> "util-macros"
+  "glib" -> "util-linux"
+  "py-six" -> "python"
+  "py-pytest" -> "py-six"
+  "strumpack" -> "parmetis"
+  "py-zope-interface" -> "python"
+  "doxygen" -> "graphviz"
+  "py-unittest2" -> "py-six"
+  "omega-h" -> "cmake"
+  "gdk-pixbuf" -> "glib"
+  "gnutls" -> "zlib"
+  "py-pluggy" -> "py-setuptools-scm"
+  "mesa" -> "dri2proto"
+  "py-sphinx" -> "py-pytest"
+  "py-enum34" -> "python"
+  "gdk-pixbuf" -> "libtiff"
+  "mesa" -> "presentproto"
+  "valgrind" -> "autoconf"
+  "libxdmcp" -> "util-macros"
+  "mfem" -> "netcdf"
+  "sundials" -> "raja"
+  "font-util" -> "util-macros"
+  "py-mako" -> "py-setuptools"
+  "libgd" -> "autoconf"
+  "lua" -> "unzip"
+  "py-requests" -> "py-pytest"
+  "flex" -> "help2man"
+  "graphviz" -> "gtkplus"
+  "mumps" -> "parmetis"
+  "netgen" -> "oce"
+  "libxft" -> "util-macros"
+  "harfbuzz" -> "cairo"
+  "gmsh" -> "mpi"
+  "flex" -> "autoconf"
+  "py-pbr" -> "py-enum34"
+  "lcms" -> "jpeg"
+  "libtool" -> "xz"
+  "py-flask" -> "py-click"
+  "py-packaging" -> "py-six"
+  "py-attrs" -> "python"
+  "py-simplejson" -> "py-setuptools"
+  "mesa" -> "libxv"
+  "phist" -> "eigen"
+  "xsdk" -> "magma"
+  "trilinos" -> "superlu"
+  "mfem" -> "unwind"
   "dealii" -> "boost"
-  "intel-tbb" -> "cmake"
-  "dealii" -> "openblas"
-  "oce" -> "intel-tbb"
-  "xsdk" -> "pflotran"
-  "pflotran" -> "openmpi"
+  "gobject-introspection" -> "flex"
+  "py-html5lib" -> "py-six"
+  "qt" -> "gperf"
+  "arpack-ng" -> "cmake"
+  "libssh" -> "zlib"
+  "xproto" -> "pkgconfig"
+  "libxdamage" -> "pkgconfig"
+  "glib" -> "perl"
+  "binutils" -> "m4"
+  "glib" -> "gettext"
+  "cairo" -> "libxext"
+  "libx11" -> "xproto"
+  "dealii" -> "suite-sparse"
+  "mesa" -> "openssl"
+  "py-numpy" -> "py-pytest"
+  "py-attrs" -> "py-setuptools"
+  "gmsh" -> "oce"
+  "graphviz" -> "glib"
+  "cairo" -> "python"
+  "libssh" -> "cmake"
+  "meson" -> "ninja"
+  "arpack-ng" -> "autoconf"
+  "bison" -> "perl"
+  "p4est" -> "mpi"
+  "gmsh" -> "zlib"
+  "fontconfig" -> "font-util"
+  "py-click" -> "python"
+  "python" -> "openssl"
+  "mfem" -> "blas"
+  "dealii" -> "nanoflann"
+  "bison" -> "diffutils"
+  "hwloc" -> "numactl"
+  "libxext" -> "util-macros"
+  "mumps" -> "metis"
+  "mesa" -> "damageproto"
+  "libssh2" -> "xz"
+  "fltk" -> "libx11"
+  "curl" -> "nghttp2"
+  "at-spi2-atk" -> "atk"
+  "dealii" -> "scalapack"
+  "py-mako" -> "py-markupsafe"
+  "py-alabaster" -> "py-setuptools"
+  "swig" -> "pcre"
+  "sundials" -> "cmake"
+  "mfem" -> "sundials"
+  "dealii" -> "petsc"
+  "freetype" -> "bzip2"
+  "trilinos" -> "zlib"
+  "py-babel" -> "py-setuptools"
+  "automake" -> "autoconf"
+  "graphviz" -> "pango"
+  "meson" -> "python"
+  "gmsh" -> "fltk"
+  "shared-mime-info" -> "libxml2"
+  "gmp" -> "m4"
+  "python" -> "readline"
+  "libpng" -> "zlib"
+  "mesa" -> "zlib"
+  "sundials" -> "suite-sparse"
+  "gnutls" -> "gettext"
+  "mfem" -> "suite-sparse"
+  "py-itsdangerous" -> "py-setuptools"
+  "py-atomicwrites" -> "python"
+  "mesa" -> "py-argparse"
+  "libtiff" -> "zlib"
+  "help2man" -> "perl"
+  "arpack-ng" -> "lapack"
+  "pango" -> "libxft"
+  "phist" -> "python"
+  "llvm" -> "py-six"
+  "libxcb" -> "pkgconfig"
+  "py-flask" -> "python"
+  "adol-c" -> "m4"
+  "netcdf" -> "m4"
+  "xextproto" -> "pkgconfig"
+  "libxrender" -> "libx11"
+  "cmake" -> "libuv"
+  "strumpack" -> "lapack"
+  "petsc" -> "hdf5"
+  "cgns" -> "mpi"
+  "dealii" -> "sundials"
+  "mfem" -> "petsc"
+  "libxcb" -> "libpthread-stubs"
+  "xsdk" -> "strumpack"
+  "py-atomicwrites" -> "py-setuptools"
+  "strumpack" -> "scalapack"
+  "assimp" -> "boost"
+  "lua" -> "ncurses"
+  "py-traceback2" -> "py-linecache2"
+  "m4" -> "libsigsegv"
+  "libxml2" -> "pkgconfig"
+  "glib" -> "libffi"
+  "freetype" -> "libpng"
+  "expat" -> "libbsd"
+  "qt" -> "gl"
+  "cairo" -> "freetype"
+  "glproto" -> "pkgconfig"
+  "boost" -> "zlib"
+  "curl" -> "openssl"
+  "at-spi2-core" -> "pkgconfig"
+  "sundials" -> "hypre"
+  "tasmanian" -> "magma"
+  "llvm" -> "binutils"
+  "netgen" -> "zlib"
+  "at-spi2-core" -> "dbus"
+  "binutils" -> "gettext"
+  "xsdk" -> "plasma"
+  "trilinos" -> "matio"
+  "libxdamage" -> "fixesproto"
+  "py-sphinx" -> "py-babel"
+  "gmsh" -> "netgen"
+  "harfbuzz" -> "glib"
+  "fontconfig" -> "pkgconfig"
+  "mesa" -> "bison"
+  "libxi" -> "libx11"
+  "fftw" -> "mpi"
+  "qt" -> "flex"
+  "conduit" -> "py-numpy"
+  "phist" -> "lapack"
+  "dealii" -> "doxygen"
+  "atk" -> "pkgconfig"
+  "conduit" -> "hdf5"
+  "mesa" -> "py-mako"
+  "gettext" -> "libunistring"
+  "parmetis" -> "mpi"
+  "qt" -> "jpeg"
+  "atk" -> "glib"
+  "py-ordereddict" -> "python"
+  "py-docutils" -> "python"
+  "nghttp2" -> "py-cython"
+  "hwloc" -> "pkgconfig"
+  "mesa" -> "libxfixes"
+  "gtkplus" -> "gobject-introspection"
+  "dealii" -> "slepc"
+  "mesa" -> "libx11"
+  "gdk-pixbuf" -> "pkgconfig"
+  "xsdk" -> "trilinos"
+  "alquimia" -> "hdf5"
+  "py-coverage" -> "py-setuptools"
+  "gnutls" -> "pkgconfig"
+  "trilinos" -> "boost"
+  "petsc" -> "zlib"
+  "phist" -> "parmetis"
+  "superlu-dist" -> "parmetis"
+  "libxml2" -> "python"
+  "parmetis" -> "cmake"
+  "libepoxy" -> "meson"
+  "flex" -> "bison"
+  "py-lit" -> "python"
+  "pixman" -> "pkgconfig"
+  "libxau" -> "xproto"
+  "libxi" -> "libxfixes"
+  "dealii" -> "p4est"
+  "strumpack" -> "metis"
+  "strumpack" -> "cmake"
+  "mesa" -> "python"
+  "libssh2" -> "openssl"
+  "py-cython" -> "python"
+  "gtkplus" -> "pango"
+  "py-flask" -> "py-itsdangerous"
+  "raja" -> "cuda"
+  "zoltan" -> "metis"
+  "py-sphinx" -> "py-simplejson"
+  "kbproto" -> "pkgconfig"
+  "py-appdirs" -> "python"
+  "py-pluggy" -> "python"
+  "gmsh" -> "lapack"
+  "py-sphinxcontrib-websupport" -> "py-mock"
+  "qt" -> "gtkplus"
+  "libarchive" -> "zlib"
+  "libxi" -> "xproto"
+  "py-sphinx" -> "py-packaging"
+  "hdf" -> "zlib"
+  "perl" -> "gdbm"
+  "gmsh" -> "blas"
+  "gdbm" -> "readline"
+  "dealii" -> "netcdf-cxx"
+  "fftw" -> "autoconf"
+  "tk" -> "libx11"
+  "at-spi2-core" -> "libx11"
+  "eigen" -> "gmp"
+  "py-zope-event" -> "python"
+  "hypre" -> "mpi"
+  "adol-c" -> "automake"
+  "cmake" -> "ncurses"
+  "py-pytest" -> "py-funcsigs"
+  "mesa" -> "dri3proto"
+  "libtool" -> "automake"
+  "py-linecache2" -> "py-pbr"
+  "py-setuptools" -> "py-packaging"
+  "py-pytest" -> "py-setuptools"
+  "libmng" -> "zlib"
+  "py-sphinx" -> "py-sphinx-rtd-theme"
+  "amrex" -> "python"
+  "muparser" -> "cmake"
+  "trilinos" -> "blas"
+  "cmake" -> "libarchive"
+  "gtkplus" -> "libxi"
+  "py-itsdangerous" -> "python"
+  "libx11" -> "xextproto"
+  "alquimia" -> "cmake"
+  "libx11" -> "kbproto"
+  "python" -> "pkgconfig"
+  "py-unittest2" -> "py-traceback2"
+  "glib" -> "zlib"
+  "qt" -> "openssl"
+  "libxext" -> "libx11"
+  "bison" -> "m4"
+  "gmp" -> "automake"
+  "netcdf" -> "curl"
+  "gobject-introspection" -> "sed"
+  "petsc" -> "libx11"
+  "openssl" -> "perl"
+  "nghttp2" -> "python"
+  "phist" -> "cmake"
+  "silo" -> "zlib"
+  "libuv" -> "automake"
+  "py-pygments" -> "py-setuptools"
+  "dealii" -> "assimp"
+  "binutils" -> "zlib"
+  "py-mock" -> "py-pbr"
+  "libtiff" -> "jpeg"
+  "py-flask" -> "py-werkzeug"
+  "py-pathlib2" -> "py-scandir"
+  "cairo" -> "pkgconfig"
+  "gettext" -> "ncurses"
+  "ghostscript" -> "libtiff"
+  "gettext" -> "bzip2"
+  "cairo" -> "glib"
+  "lua" -> "readline"
+  "py-hypothesis" -> "python"
+  "graphviz" -> "libtool"
+  "petsc" -> "mumps"
+  "at-spi2-atk" -> "meson"
+  "gmsh" -> "cmake"
+  "libtool" -> "help2man"
+  "lcms" -> "libtiff"
+  "py-sphinx" -> "py-docutils"
+  "p4est" -> "zlib"
+  "numactl" -> "libtool"
+  "glib" -> "python"
+  "py-pygments" -> "python"
+  "libgd" -> "pkgconfig"
+  "py-mock" -> "py-setuptools"
+  "ghost" -> "hwloc"
+  "py-pytest-mock" -> "py-pytest"
+  "llvm" -> "isl"
+  "py-decorator" -> "py-setuptools"
+  "py-pytz" -> "py-setuptools"
+  "libxvmc" -> "xextproto"
+  "gnutls" -> "nettle"
+  "trilinos" -> "mumps"
+  "qt" -> "zlib"
+  "glproto" -> "util-macros"
+  "libxv" -> "libx11"
+  "libarchive" -> "nettle"
+  "ghost" -> "cmake"
+  "trilinos" -> "cmake"
+  "py-sphinxcontrib-websupport" -> "py-pytest"
+  "curl" -> "libssh"
+  "oce" -> "cmake"
+  "libgd" -> "automake"
+  "petsc" -> "parmetis"
+  "py-sphinx" -> "py-requests"
+  "py-decorator" -> "python"
+  "hypre" -> "lapack"
+  "magma" -> "cuda"
+  "fixesproto" -> "util-macros"
+  "xsdk" -> "mfem"
+  "hdf" -> "szip"
+  "trilinos" -> "netcdf"
+  "xsdk" -> "phist"
+  "conduit" -> "mpi"
+  "phist" -> "ghost"
+  "sundials" -> "blas"
+  "mfem" -> "mpi"
+  "mpfr" -> "gmp"
+  "petsc" -> "superlu-dist"
+  "py-pytest-httpbin" -> "python"
   "autoconf" -> "perl"
-  "phist" -> "openmpi"
+  "py-httpbin" -> "python"
+  "superlu-mt" -> "blas"
+  "sundials" -> "lapack"
+  "petsc" -> "blas"
+  "hdf" -> "bison"
+  "trilinos" -> "lapack"
+  "trilinos" -> "metis"
+  "ghostscript" -> "libpng"
+  "libx11" -> "perl"
+  "mfem" -> "mpfr"
+  "libx11" -> "xtrans"
+  "gettext" -> "tar"
+  "sqlite" -> "readline"
+  "py-pytest-cov" -> "py-pytest"
+  "hdf" -> "flex"
+  "font-util" -> "pkgconfig"
+  "py-argparse" -> "py-setuptools"
+  "conduit" -> "py-sphinx"
+  "glib" -> "pkgconfig"
+  "graphviz" -> "libgd"
+  "gtkplus" -> "fixesproto"
+  "scotch" -> "mpi"
+  "py-traceback2" -> "py-pbr"
+  "mumps" -> "mpi"
+  "valgrind" -> "mpi"
+  "netcdf" -> "hdf"
+  "libarchive" -> "openssl"
+  "py-pathlib2" -> "python"
+  "llvm" -> "gmp"
+  "at-spi2-core" -> "glib"
+  "gmsh" -> "hdf5"
+  "xsdk" -> "amrex"
+  "at-spi2-core" -> "recordproto"
+  "libarchive" -> "lz4"
+  "libxtst" -> "pkgconfig"
+  "harfbuzz" -> "freetype"
+  "libepoxy" -> "mesa"
+  "trilinos" -> "swig"
+  "binutils" -> "bison"
+  "dealii" -> "mpi"
+  "graphviz" -> "java"
+  "mesa" -> "xproto"
+  "mesa" -> "libxdamage"
+  "trilinos" -> "superlu-dist"
+  "py-httpbin" -> "py-markupsafe"
+  "py-nose" -> "python"
+  "py-pytest" -> "py-setuptools-scm"
+  "arpack-ng" -> "automake"
+  "py-funcsigs" -> "python"
+  "readline" -> "ncurses"
+  "py-pbr" -> "python"
+  "libxv" -> "libxext"
+  "phist" -> "petsc"
+  "libxft" -> "freetype"
+  "netcdf-cxx" -> "netcdf"
+  "boost" -> "bzip2"
+  "omega-h" -> "mpi"
+  "py-pytest-mock" -> "py-setuptools"
+  "py-zope-interface" -> "py-nose"
+  "libarchive" -> "bzip2"
+  "py-unittest2" -> "python"
+  "shared-mime-info" -> "gettext"
+  "hypre" -> "blas"
+  "xsdk" -> "tasmanian"
+  "harfbuzz" -> "icu4c"
+  "py-httpbin" -> "py-decorator"
+  "py-enum34" -> "py-setuptools"
+  "libgd" -> "m4"
+  "py-pbr" -> "py-setuptools"
+  "libxml2" -> "zlib"
+  "py-attrs" -> "py-coverage"
+  "dealii" -> "bzip2"
+  "libxft" -> "libx11"
+  "graphviz" -> "gts"
+  "at-spi2-core" -> "libxi"
+  "trilinos" -> "suite-sparse"
+  "py-numpy" -> "python"
+  "mfem" -> "metis"
+  "pango" -> "cairo"
+  "mesa" -> "flex"
+  "qt" -> "bison"
+  "tasmanian" -> "cuda"
+  "qt" -> "libtiff"
+  "pflotran" -> "hdf5"
+  "mesa" -> "fixesproto"
+  "magma" -> "blas"
+  "gobject-introspection" -> "python"
+  "libxfixes" -> "xproto"
+  "flex" -> "m4"
+  "graphviz" -> "automake"
+  "dri2proto" -> "util-macros"
+  "eigen" -> "scotch"
+  "libxvmc" -> "libxext"
+  "graphviz" -> "flex"
+  "parallel-netcdf" -> "m4"
+  "mesa" -> "pkgconfig"
+  "py-setuptools" -> "py-six"
+  "libxfixes" -> "pkgconfig"
+  "gobject-introspection" -> "pkgconfig"
+  "xsdk" -> "hypre"
+  "libxi" -> "fixesproto"
+  "trilinos" -> "python"
+  "gdk-pixbuf" -> "jpeg"
+  "py-attrs" -> "py-zope-interface"
+  "assimp" -> "cmake"
+  "magma" -> "lapack"
+  "libarchive" -> "xz"
+  "py-typing" -> "python"
+  "doxygen" -> "flex"
+  "py-httpbin" -> "py-setuptools"
+  "py-sphinx" -> "py-six"
+  "libxi" -> "pkgconfig"
+  "parmetis" -> "metis"
+  "py-pytest-cov" -> "python"
+  "gtkplus" -> "atk"
+  "phist" -> "trilinos"
+  "libgd" -> "libtiff"
+  "arpack-ng" -> "mpi"
+  "xsdk" -> "omega-h"
+  "p4est" -> "autoconf"
+  "mesa" -> "libpthread-stubs"
+  "xsdk" -> "slepc"
+  "libgd" -> "libiconv"
+  "py-pytest-httpbin" -> "py-setuptools"
+  "dealii" -> "arpack-ng"
+  "gtkplus" -> "inputproto"
+  "py-mock" -> "py-funcsigs"
+  "libmng" -> "lcms"
+  "cmake" -> "python"
+  "ghostscript" -> "freetype"
+  "dealii" -> "metis"
+  "cmake" -> "expat"
+  "py-packaging" -> "python"
+  "qt" -> "glib"
+  "damageproto" -> "util-macros"
+  "py-pytest-httpbin" -> "py-six"
+  "tcl" -> "zlib"
+  "graphviz" -> "fontconfig"
+  "libxshmfence" -> "util-macros"
+  "boost" -> "py-numpy"
+  "py-numpy" -> "blas"
+  "cmake" -> "curl"
+  "freetype" -> "pkgconfig"
+  "libxdamage" -> "libx11"
+  "cmake" -> "openssl"
+  "slepc" -> "petsc"
+  "netgen" -> "mpi"
+  "zoltan" -> "mpi"
+  "hdf5" -> "mpi"
+  "inputproto" -> "util-macros"
+  "at-spi2-core" -> "meson"
+  "pango" -> "gobject-introspection"
+  "py-setuptools-scm" -> "python"
+  "graphviz" -> "bison"
+  "silo" -> "hdf5"
+  "py-zope-interface" -> "py-setuptools"
+  "ghostscript" -> "libxext"
+  "libxshmfence" -> "xproto"
+  "superlu-dist" -> "cmake"
+  "petsc" -> "hypre"
+  "py-markupsafe" -> "py-setuptools"
+  "llvm" -> "python"
+  "util-linux" -> "python"
+  "py-more-itertools" -> "py-six"
+  "xsdk" -> "sundials"
+  "llvm" -> "ncurses"
+  "cairo" -> "libpng"
+  "libssh2" -> "cmake"
+  "libxdamage" -> "libxfixes"
+  "sundials" -> "mpi"
+  "trilinos" -> "glm"
+  "adol-c" -> "autoconf"
+  "libelf" -> "gobject-introspection"
+  "fftw" -> "libtool"
+  "py-pytest-cov" -> "py-coverage"
+  "py-hypothesis" -> "py-setuptools"
+  "alquimia" -> "pflotran"
+  "suite-sparse" -> "blas"
+  "libxtst" -> "util-macros"
+  "adol-c" -> "libtool"
+  "hwloc" -> "gl"
+  "videoproto" -> "util-macros"
+  "atk" -> "gettext"
+  "petsc" -> "lapack"
+  "libxdamage" -> "xextproto"
+  "petsc" -> "scalapack"
+  "py-attrs" -> "py-six"
+  "graphviz" -> "python"
+  "libgd" -> "libtool"
+  "kbproto" -> "util-macros"
+  "suite-sparse" -> "cuda"
+  "hwloc" -> "cuda"
+  "valgrind" -> "boost"
+  "py-requests" -> "py-pytest-cov"
+  "gobject-introspection" -> "bison"
+  "valgrind" -> "libtool"
+  "gtkplus" -> "glib"
+  "libxtst" -> "recordproto"
+  "py-argparse" -> "python"
+  "strumpack" -> "scotch"
+  "py-sphinxcontrib-websupport" -> "py-setuptools"
+  "valgrind" -> "automake"
+  "mesa" -> "libxvmc"
+  "py-werkzeug" -> "python"
+  "conduit" -> "silo"
+  "dri3proto" -> "pkgconfig"
+  "numactl" -> "m4"
+  "py-unittest2" -> "py-argparse"
+  "libdrm" -> "pkgconfig"
+  "libxext" -> "xextproto"
+  "py-jinja2" -> "py-markupsafe"
+  "py-mako" -> "py-mock"
+  "tasmanian" -> "py-numpy"
+  "libarchive" -> "libxml2"
+  "libxv" -> "videoproto"
+  "py-attrs" -> "py-pympler"
+  "xsdk" -> "pumi"
+  "py-sphinx" -> "py-imagesize"
+  "py-html5lib" -> "python"
+  "flex" -> "automake"
+  "py-sphinx" -> "py-sphinxcontrib-websupport"
+  "dealii" -> "muparser"
+  "netcdf" -> "mpi"
+  "dealii" -> "python"
+  "sundials" -> "superlu-mt"
+  "py-pytest" -> "py-more-itertools"
+  "shared-mime-info" -> "glib"
+  "py-pytest" -> "py-pathlib2"
+  "libxdamage" -> "damageproto"
+  "mumps" -> "scotch"
+  "py-sphinx" -> "py-snowballstemmer"
+  "gettext" -> "xz"
+  "graphviz" -> "expat"
+  "py-pytest-cov" -> "py-setuptools"
+  "pixman" -> "libpng"
+  "trilinos" -> "hdf5"
+  "glib" -> "pcre"
+  "py-requests" -> "py-pytest-mock"
+  "eigen" -> "fftw"
+  "libdrm" -> "libpthread-stubs"
+  "hdf" -> "jpeg"
+  "ghost" -> "scotch"
+  "atk" -> "gobject-introspection"
+  "pumi" -> "zoltan"
+  "gdk-pixbuf" -> "libpng"
+  "python" -> "sqlite"
+  "zoltan" -> "parmetis"
+  "libxfixes" -> "util-macros"
+  "p4est" -> "libtool"
+  "graphviz" -> "zlib"
+  "cmake" -> "xz"
+  "libpciaccess" -> "libtool"
+  "scotch" -> "flex"
+  "libxvmc" -> "util-macros"
+  "mfem" -> "gnutls"
+  "py-setuptools-scm" -> "py-setuptools"
+  "py-setuptools" -> "py-appdirs"
+  "dealii" -> "cuda"
+  "py-attrs" -> "py-hypothesis"
+  "petsc" -> "sowing"
+  "gtkplus" -> "libepoxy"
+  "llvm" -> "swig"
+  "netcdf" -> "hdf5"
+  "py-lit" -> "py-setuptools"
+  "py-zope-interface" -> "py-coverage"
+  "gmsh" -> "tetgen"
+  "py-linecache2" -> "python"
+  "eigen" -> "mpfr"
+  "py-funcsigs" -> "py-unittest2"
+  "gtkplus" -> "shared-mime-info"
+  "py-sphinx-rtd-theme" -> "python"
+  "mesa" -> "expat"
+  "xsdk" -> "superlu-dist"
+  "py-pytest-httpbin" -> "py-httpbin"
+  "py-sphinx" -> "py-typing"
+  "python" -> "ncurses"
+  "py-pympler" -> "python"
+  "libarchive" -> "lzma"
+  "matio" -> "hdf5"
+  "plasma" -> "lapack"
+  "pumi" -> "mpi"
+  "py-numpy" -> "py-setuptools"
+  "libxv" -> "xextproto"
+  "py-pathlib2" -> "py-setuptools"
+  "gdk-pixbuf" -> "gettext"
+  "py-py" -> "py-setuptools"
+  "cairo" -> "fontconfig"
+  "py-sphinxcontrib-websupport" -> "python"
+  "at-spi2-atk" -> "at-spi2-core"
+  "nettle" -> "gmp"
+  "libxshmfence" -> "pkgconfig"
+  "gmp" -> "libtool"
+  "py-pytest-mock" -> "py-mock"
+  "gobject-introspection" -> "glib"
+  "curl" -> "zlib"
+  "xtrans" -> "pkgconfig"
+  "libxi" -> "xextproto"
+  "inputproto" -> "pkgconfig"
+  "pango" -> "pkgconfig"
+  "libxtst" -> "inputproto"
+  "plasma" -> "blas"
+  "py-mako" -> "python"
+  "qt" -> "icu4c"
+  "libxtst" -> "libxi"
+  "libssh" -> "openssl"
+  "libtool" -> "texinfo"
+  "recordproto" -> "pkgconfig"
+  "sundials" -> "cuda"
+  "phist" -> "blas"
+  "trilinos" -> "parallel-netcdf"
+  "mesa" -> "icu4c"
+  "py-pytest-mock" -> "python"
+  "perl-xml-parser" -> "expat"
+  "libx11" -> "util-macros"
+  "tasmanian" -> "blas"
+  "qt" -> "libxml2"
+  "libtiff" -> "xz"
+  "libxtst" -> "fixesproto"
+  "fixesproto" -> "pkgconfig"
+  "bison" -> "help2man"
+  "libxfixes" -> "fixesproto"
+  "cgns" -> "hdf5"
+  "mesa" -> "gettext"
+  "superlu-dist" -> "metis"
+  "graphviz" -> "swig"
+  "py-coverage" -> "python"
+  "superlu" -> "blas"
+  "numactl" -> "automake"
+  "at-spi2-atk" -> "pkgconfig"
+  "python" -> "zlib"
+  "dealii" -> "gmsh"
+  "py-requests" -> "py-setuptools"
+  "libtool" -> "autoconf"
+  "libxv" -> "pkgconfig"
+  "pumi" -> "cmake"
+  "pango" -> "glib"
+  "libxdmcp" -> "xproto"
+  "slepc" -> "python"
+  "cmake" -> "rhash"
+  "python" -> "libffi"
+  "matio" -> "zlib"
+  "cmake" -> "qt"
+  "suite-sparse" -> "metis"
+  "presentproto" -> "pkgconfig"
+  "cmake" -> "zlib"
+  "qt" -> "python"
+  "trilinos" -> "hypre"
+  "ghost" -> "blas"
+  "petsc" -> "metis"
+  "amrex" -> "cmake"
+  "libtool" -> "m4"
+  "llvm" -> "libedit"
+  "libssh2" -> "zlib"
+  "omega-h" -> "trilinos"
+  "ghostscript" -> "lcms"
+  "qt" -> "freetype"
+  "nanoflann" -> "cmake"
+  "videoproto" -> "pkgconfig"
+  "libarchive" -> "expat"
+  "py-numpy" -> "lapack"
+  "boost" -> "icu4c"
+  "dealii" -> "lapack"
+  "dbus" -> "pkgconfig"
+  "libxft" -> "fontconfig"
+  "llvm" -> "py-lit"
+  "py-pytz" -> "python"
+  "netgen" -> "metis"
+  "libxcb" -> "xcb-proto"
+  "tasmanian" -> "cmake"
+  "amrex" -> "mpi"
+  "libuv" -> "autoconf"
+  "gettext" -> "libxml2"
+  "xproto" -> "util-macros"
+  "libxdamage" -> "util-macros"
+  "trilinos" -> "cgns"
+  "xsdk" -> "petsc"
+  "xsdk" -> "alquimia"
+  "py-py" -> "py-setuptools-scm"
+  "scotch" -> "bison"
+  "libedit" -> "ncurses"
+  "py-babel" -> "py-pytz"
+  "dealii" -> "zlib"
+  "eigen" -> "cmake"
+  "trilinos" -> "scalapack"
+  "py-alabaster" -> "python"
+  "arpack-ng" -> "blas"
+  "py-click" -> "py-setuptools"
+  "sundials" -> "petsc"
+  "omega-h" -> "gmsh"
+  "py-jinja2" -> "py-setuptools"
+  "gtkplus" -> "gdk-pixbuf"
+  "adol-c" -> "boost"
+  "dealii" -> "hdf5"
+  "py-pytest-httpbin" -> "py-decorator"
+  "conduit" -> "cmake"
+  "cgns" -> "cmake"
+  "ghost" -> "zoltan"
+  "gtkplus" -> "at-spi2-atk"
+  "py-linecache2" -> "py-setuptools"
+  "libxext" -> "pkgconfig"
+  "suite-sparse" -> "lapack"
+  "nettle" -> "m4"
+  "ghost" -> "cuda"
+  "eigen" -> "suite-sparse"
+  "petsc" -> "python"
+  "py-snowballstemmer" -> "python"
+  "py-enum34" -> "py-ordereddict"
+  "superlu" -> "cmake"
+  "trilinos" -> "py-numpy"
+  "trilinos" -> "mpi"
+  "bzip2" -> "diffutils"
+  "py-traceback2" -> "python"
+  "py-mock" -> "py-six"
+  "python" -> "tk"
+  "superlu-dist" -> "mpi"
+  "py-flask" -> "py-jinja2"
+  "libepoxy" -> "pkgconfig"
+  "py-unittest2" -> "py-setuptools"
+  "libpciaccess" -> "pkgconfig"
+  "gts" -> "glib"
+  "p4est" -> "automake"
+  "tk" -> "tcl"
+  "libxvmc" -> "pkgconfig"
+  "libx11" -> "libxcb"
+  "py-sphinx" -> "py-jinja2"
+  "curl" -> "libssh2"
+  "qt" -> "libmng"
+  "libgd" -> "jpeg"
+  "dealii" -> "trilinos"
+  "mesa" -> "glproto"
+  "at-spi2-core" -> "libxtst"
+  "py-pytest" -> "py-pluggy"
+  "py-more-itertools" -> "python"
+  "at-spi2-core" -> "fixesproto"
+  "pflotran" -> "mpi"
+  "scotch" -> "zlib"
+  "dri2proto" -> "pkgconfig"
+  "libxvmc" -> "libx11"
+  "libxrender" -> "renderproto"
+  "py-pytest" -> "py-attrs"
+  "libarchive" -> "lzo"
+  "arpack-ng" -> "libtool"
+  "boost" -> "python"
+  "xextproto" -> "util-macros"
+  "plasma" -> "lua"
+  "libxi" -> "libxext"
+  "cmake" -> "py-sphinx"
+  "py-pluggy" -> "py-setuptools"
+  "libxtst" -> "libxext"
+  "strumpack" -> "mpi"
+  "ghostscript" -> "pkgconfig"
+  "alquimia" -> "petsc"
+  "fontconfig" -> "freetype"
+  "mfem" -> "conduit"
+  "lz4" -> "valgrind"
+  "metis" -> "cmake"
+  "eigen" -> "metis"
+  "xsdk" -> "dealii"
+  "libmng" -> "jpeg"
+  "libxvmc" -> "videoproto"
+  "hwloc" -> "cairo"
+  "libxrender" -> "pkgconfig"
+  "xtrans" -> "util-macros"
+  "mesa" -> "libxext"
+  "py-sphinx" -> "py-pygments"
+  "renderproto" -> "pkgconfig"
+  "shared-mime-info" -> "pkgconfig"
+  "graphviz" -> "ghostscript"
+  "graphviz" -> "pkgconfig"
+  "recordproto" -> "util-macros"
+  "graphviz" -> "cairo"
+  "libgd" -> "gettext"
+  "superlu-dist" -> "blas"
+  "harfbuzz" -> "pkgconfig"
+  "libx11" -> "pkgconfig"
+  "mfem" -> "pumi"
+  "flex" -> "libtool"
+  "py-scandir" -> "py-setuptools"
+  "damageproto" -> "pkgconfig"
+  "oce" -> "tbb"
+  "py-pytest" -> "python"
+  "superlu-dist" -> "lapack"
+  "gmsh" -> "slepc"
+  "glm" -> "cmake"
+  "hdf5" -> "zlib"
+  "gmsh" -> "petsc"
+  "py-packaging" -> "py-pyparsing"
+  "py-babel" -> "python"
+  "suite-sparse" -> "cmake"
+  "py-numpy" -> "py-nose"
+  "openssl" -> "zlib"
+  "automake" -> "perl"
+  "libxv" -> "util-macros"
+  "libxau" -> "pkgconfig"
+  "py-jinja2" -> "python"
+  "cmake" -> "bzip2"
+  "hdf5" -> "szip"
+  "alquimia" -> "mpi"
+  "intltool" -> "perl"
+  "llvm" -> "cmake"
+  "py-sphinx" -> "py-alabaster"
+  "libgd" -> "libpng"
+  "tasmanian" -> "mpi"
+  "py-imagesize" -> "python"
+  "silo" -> "mpi"
+  "petsc" -> "suite-sparse"
+  "graphviz" -> "freetype"
+  "nghttp2" -> "py-setuptools"
+  "libxcb" -> "libxau"
+  "strumpack" -> "blas"
+  "phist" -> "mpi"
+  "python" -> "bzip2"
+  "at-spi2-atk" -> "ninja"
+  "libxdmcp" -> "pkgconfig"
+  "python" -> "tcl"
+  "harfbuzz" -> "zlib"
+  "cairo" -> "libxrender"
+  "py-markupsafe" -> "python"
+  "intltool" -> "perl-xml-parser"
+  "libxfixes" -> "xextproto"
+  "shared-mime-info" -> "intltool"
+  "doxygen" -> "bison"
+  "mfem" -> "hypre"
+  "py-traceback2" -> "py-setuptools"
+  "conduit" -> "python"
+  "isl" -> "gmp"
+  "py-simplejson" -> "python"
+  "libxft" -> "pkgconfig"
+  "suite-sparse" -> "tbb"
+  "dealii" -> "graphviz"
+  "slepc" -> "arpack-ng"
+  "py-pyparsing" -> "python"
+  "ghostscript" -> "jpeg"
+  "ghost" -> "mpi"
+  "dealii" -> "blas"
+  "atk" -> "meson"
+  "xsdk" -> "pflotran"
+  "perl-xml-parser" -> "perl"
+  "tasmanian" -> "python"
+  "py-zope-event" -> "py-setuptools"
+  "qt" -> "libpng"
+  "at-spi2-core" -> "ninja"
+  "py-mock" -> "python"
+  "libxcb" -> "libxdmcp"
+  "py-sphinx-rtd-theme" -> "py-setuptools"
+  "netcdf" -> "parallel-netcdf"
+  "mesa" -> "libdrm"
+  "at-spi2-core" -> "inputproto"
+  "dbus" -> "expat"
+  "graphviz" -> "autoconf"
+  "conduit" -> "doxygen"
+  "py-pytest-httpbin" -> "py-flask"
+  "pango" -> "harfbuzz"
+  "py-httpbin" -> "py-flask"
+  "mesa" -> "libelf"
+  "at-spi2-core" -> "python"
+  "mesa" -> "libxcb"
+  "flex" -> "gettext"
+  "gobject-introspection" -> "cairo"
 }
