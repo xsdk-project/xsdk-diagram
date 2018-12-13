@@ -3,10 +3,10 @@ digraph G {
   rankdir = "TB"
   ranksep = "1"
   ratio = ".9"
-  nodesep = ".1"
+  nodesep = ".2"
   bgcolor = "transparent"
 edge[
-     penwidth = "2"
+     penwidth = "1"
      color = "#666666"
      arrowsize = "2"
 ]
@@ -20,56 +20,66 @@ node[
      fontcolor=white,
      style="rounded,filled"]
 
+  "phist" [label="phist", fillcolor="chartreuse4"]
+  "magma" [label="magma", fillcolor="chartreuse4"]
+  "trilinos" [label="trilinos", fillcolor="chartreuse4"]
+  "alquimia" [label="alquimia", fillcolor="chartreuse4"]
+  "amrex" [label="amrex", fillcolor="chartreuse4"]
+  "slepc" [label="slepc", fillcolor="chartreuse4"]
+  "pumi" [label="pumi", fillcolor="chartreuse4"]
+  "tasmanian" [label="tasmanian", fillcolor="chartreuse4"]
+  "strumpack" [label="strumpack", fillcolor="chartreuse4"]
+  "superlu-dist" [label="superlu-dist", fillcolor="chartreuse4"]
+  "pflotran" [label="pflotran", fillcolor="chartreuse4"]
+  "mfem" [label="mfem", fillcolor="chartreuse4"]
+  "sundials" [label="sundials", fillcolor="chartreuse4"]
+  "omega-h" [label="omega-h", fillcolor="chartreuse4"]
   "xsdk" [label="xsdk"]
-  "alquimia" [label="alquimia"] [fillcolor="chartreuse4"]
-  "petsc" [label="petsc"] [fillcolor="chartreuse4"]
-  "hypre" [label="hypre"] [fillcolor="chartreuse4"]
-  "superlu-dist" [label="superlu-dist"] [fillcolor="chartreuse4"]
-  "trilinos" [label="trilinos"] [fillcolor="chartreuse4"]
-  "pflotran" [label="pflotran"] [fillcolor="chartreuse4"]
-  "dealii" [label="dealii"] [fillcolor="chartreuse4"]
-  "suite-sparse" [label="suite-sparse"] [fillcolor="chartreuse4"]
-  "sundials" [label="sundials"] [fillcolor="chartreuse4"]
-  "mfem" [label="mfem"] [fillcolor="chartreuse4"]
-  "omega-h" [label="omega-h"] [fillcolor="chartreuse4"]
-  "phist" [label="phist"] [fillcolor="chartreuse4"]
-  "pumi" [label="pumi"] [fillcolor="chartreuse4"]
-  "slepc" [label="slepc"] [fillcolor="chartreuse4"]
-  "strumpack" [label="strumpack"] [fillcolor="chartreuse4"]
-  "tasmanian" [label="tasmanian"] [fillcolor="chartreuse4"]
+  "petsc" [label="petsc", fillcolor="chartreuse4"]
+  "dealii" [label="dealii", fillcolor="chartreuse4"]
+  "hypre" [label="hypre", fillcolor="chartreuse4"]
+  "plasma" [label="plasma", fillcolor="chartreuse4"]
 
+  "tasmanian" -> "magma"
   "xsdk" -> "mfem"
-  "phist" -> "trilinos"
-  "xsdk" -> "omega-h"
-  "dealii" -> "sundials"
-  "mfem" -> "petsc"
-  "mfem" -> "sundials"
-  "xsdk" -> "phist"
-  "xsdk" -> "alquimia"
-  "pflotran" -> "petsc"
-  "alquimia" -> "pflotran"
-  "dealii" -> "suite-sparse"
-  "xsdk" -> "slepc"
-  "xsdk" -> "trilinos"
-  "xsdk" -> "sundials"
-  "dealii" -> "petsc"
-  "petsc" -> "hypre"
-  "xsdk" -> "petsc"
-  "dealii" -> "trilinos"
-  "xsdk" -> "dealii"
-  "xsdk" -> "strumpack"
-  "xsdk" -> "hypre"
-  "alquimia" -> "petsc"
-  "trilinos" -> "superlu-dist"
-  "mfem" -> "hypre"
-  "petsc" -> "trilinos"
-  "slepc" -> "petsc"
-  "xsdk" -> "superlu-dist"
   "mfem" -> "superlu-dist"
-  "sundials" -> "hypre"
+  "mfem" -> "petsc"
+  "slepc" -> "petsc"
+  "xsdk" -> "plasma"
+  "petsc" -> "hypre"
   "trilinos" -> "hypre"
+  "phist" -> "trilinos"
+  "dealii" -> "trilinos"
+  "xsdk" -> "magma"
+  "alquimia" -> "pflotran"
+  "xsdk" -> "superlu-dist"
   "xsdk" -> "pflotran"
-  "xsdk" -> "tasmanian"
-  "petsc" -> "superlu-dist"
   "xsdk" -> "pumi"
+  "mfem" -> "sundials"
+  "xsdk" -> "trilinos"
+  "alquimia" -> "petsc"
+  "xsdk" -> "petsc"
+  "xsdk" -> "strumpack"
+  "omega-h" -> "trilinos"
+  "petsc" -> "superlu-dist"
+  "xsdk" -> "alquimia"
+  "sundials" -> "petsc"
+  "mfem" -> "hypre"
+  "phist" -> "petsc"
+  "mfem" -> "pumi"
+  "xsdk" -> "amrex"
+  "dealii" -> "petsc"
+  "petsc" -> "trilinos"
+  "xsdk" -> "dealii"
+  "xsdk" -> "phist"
+  "xsdk" -> "sundials"
+  "xsdk" -> "omega-h"
+  "xsdk" -> "hypre"
+  "dealii" -> "slepc"
+  "xsdk" -> "tasmanian"
+  "dealii" -> "sundials"
+  "sundials" -> "hypre"
+  "pflotran" -> "petsc"
+  "xsdk" -> "slepc"
+  "trilinos" -> "superlu-dist"
 }
