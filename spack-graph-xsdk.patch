@@ -1,0 +1,67 @@
+diff --git a/lib/spack/spack/graph.py b/lib/spack/spack/graph.py
+index 9a1571d75..db3bdcb7d 100644
+--- a/lib/spack/spack/graph.py
++++ b/lib/spack/spack/graph.py
+@@ -527,6 +527,8 @@ def graph_dot(specs, deptype='all', static=False, out=None):
+ 
+     nodes = set()
+     edges = set()
++    names = set()
++    dependencies = set()
+     for spec in specs:
+         if static:
+             n, e = static_graph(spec, deptype)
+@@ -534,6 +536,8 @@ def graph_dot(specs, deptype='all', static=False, out=None):
+             n, e = dynamic_graph(spec, deptype)
+         nodes.update(n)
+         edges.update(e)
++        names.add(spec.format('{name}'))
++        dependencies |= get_dependencies(spec, deptype)
+ 
+     out.write('digraph G {\n')
+     out.write('  labelloc = "b"\n')
+@@ -548,15 +552,42 @@ def graph_dot(specs, deptype='all', static=False, out=None):
+     out.write('     fontsize=24,\n')
+     out.write('     margin=.2,\n')
+     out.write('     shape=box,\n')
+-    out.write('     fillcolor=lightblue,\n')
++    out.write('     fillcolor=brown,\n')
++    out.write('     fontcolor=white,\n')
+     out.write('     style="rounded,filled"')
+     out.write('  ]\n')
+ 
+     out.write('\n')
+     for key, label in nodes:
+-        out.write('  "%s" [label="%s"]\n' % (key, label))
++        if label in names:
++            out.write('  "%s" label="%s"]\n' % (key, label))
++        elif label in dependencies:
++            out.write('  "%s" [fillcolor=chartreuse4, label="%s"]\n' % (key, label))
++        else:
++            out.write('  "%s" [fillcolor=gray23, label="%s"]\n' % (key, label))
+ 
+     out.write('\n')
+     for src, dest in edges:
+         out.write('  "%s" -> "%s"\n' % (src, dest))
+     out.write('}\n')
++
++
++def get_dependencies(spec, deptype):
++    if not spec.virtual:
++        packages = [spec.package]
++    else:
++        packages = [
++            spack.repo.get(s.name)
++            for s in spack.repo.path.providers_for(spec)]
++
++    dependencies = set()
++    for pkg in packages:
++        possible = pkg.possible_dependencies(
++            False, False, deptype=deptype)
++        dependencies.update(possible)
++
++    if spec.name in dependencies:
++        dependencies.remove(spec.name)
++
++    return dependencies
++
