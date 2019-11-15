@@ -2,79 +2,86 @@ digraph G {
   labelloc = "b"
   rankdir = "TB"
   ranksep = "1"
-  ratio = ".9"
-  nodesep = ".2"
-  bgcolor = "transparent"
-edge[
-     penwidth = "1"
-     color = "#666666"
-     arrowsize = "2"
-]
-node[
-     fontname=Arial,
-     penwidth=2,
-     fontsize=48,
-     margin=.1,
+  edge[
+     penwidth=4  ]
+  node[
+     fontname=Monaco,
+     penwidth=4,
+     fontsize=24,
+     margin=.2,
      shape=box,
      fillcolor=brown,
      fontcolor=white,
-     style="rounded,filled"]
+     style="rounded,filled"  ]
 
-  "xsdk" [label="xsdk"]
-  "alquimia" [label="alquimia",fillcolor="chartreuse4"]
-  "petsc" [label="petsc",fillcolor="chartreuse4"]
-  "hypre" [label="hypre",fillcolor="chartreuse4"]
-  "superlu-dist" [label="superlu-dist",fillcolor="chartreuse4"]
-  "trilinos" [label="trilinos",fillcolor="chartreuse4"]
-  "pflotran" [label="pflotran",fillcolor="chartreuse4"]
-  "amrex" [label="amrex",fillcolor="chartreuse4"]
-  "dealii" [label="dealii",fillcolor="chartreuse4"]
-  "sundials" [label="sundials",fillcolor="chartreuse4"]
-  "magma" [label="magma",fillcolor="chartreuse4"]
-  "mfem" [label="mfem",fillcolor="chartreuse4"]
-  "omega-h" [label="omega-h",fillcolor="chartreuse4"]
-  "phist" [label="phist",fillcolor="chartreuse4"]
-  "plasma" [label="plasma",fillcolor="chartreuse4"]
-  "pumi" [label="pumi",fillcolor="chartreuse4"]
-  "slepc" [label="slepc",fillcolor="chartreuse4"]
-  "strumpack" [label="strumpack",fillcolor="chartreuse4"]
-  "tasmanian" [label="tasmanian",fillcolor="chartreuse4"]
+  "vxkw6axoyqnxbzhm757aftnpyzfxnrnh" [fillcolor=chartreuse4, label="sundials"]
+  "ogoduruxhivphtnrm5iw54p7owc32fil" [fillcolor=chartreuse4, label="pflotran"]
+  "i3qsw6qybsk3jajzlsebdz2oa3lupfww" [fillcolor=chartreuse4, label="magma"]
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" [label="xsdk"]
+  "u2ie4mycr4ugxoda7rtt4ukcwlft775q" [fillcolor=chartreuse4, label="butterflypack"]
+  "bf2j4wpyfhy5wnw5ufx5gewmsnukv5o2" [fillcolor=chartreuse4, label="amrex"]
+  "igz7cztywsgf3j6rl3nwzmso5iobos57" [fillcolor=chartreuse4, label="omega-h"]
+  "g5xuwd6wntqlertqazthpyx4r4niw4wy" [fillcolor=chartreuse4, label="slepc"]
+  "6olhmyu5ahuemrjkfeaqwhcytmoqsw6f" [fillcolor=chartreuse4, label="plasma"]
+  "5yuwhvfvsw2igjvul4ofawsgyxsjit5s" [fillcolor=chartreuse4, label="py-libensemble"]
+  "6pzpw3ytvkzyvwo4g3fevp3rxfgp24eg" [fillcolor=chartreuse4, label="dealii"]
+  "72rnz4jy4erijxsg2k5riktxaur62oht" [fillcolor=chartreuse4, label="alquimia"]
+  "tiigylkurixvuf6zoq4hfcpxqj532wun" [fillcolor=chartreuse4, label="strumpack"]
+  "sso7dts2ujz7btjoaoyebynxotlavjby" [fillcolor=chartreuse4, label="tasmanian"]
+  "k2kpo4kgnlazmxsb2yvre2baxcycnuul" [fillcolor=chartreuse4, label="pumi"]
+  "fiirrckvfdofa7vxreyye5d2pzuzx2kq" [fillcolor=chartreuse4, label="superlu-dist"]
+  "wniu3rsthceuc2pwvurixqjztlu2eaes" [fillcolor=chartreuse4, label="mfem"]
+  "zmt2y4g4ragnrrj2n7p2umquauspemfr" [fillcolor=chartreuse4, label="precice"]
+  "awap2lxtn3ieyvog3gopmnlsvw5uct2t" [fillcolor=chartreuse4, label="ginkgo"]
+  "en3ibmjrxarczhrptd4imvc6jdqupxxs" [fillcolor=chartreuse4, label="phist"]
+  "vipjljsq3l6iyov6uefgom7wsomfa5g7" [fillcolor=chartreuse4, label="petsc"]
+  "qvwmdggbatjbfqawuqg26lg5hwobgx3f" [fillcolor=chartreuse4, label="hypre"]
+  "s5353jlq47xttcpvmjfcxwhcbmayk2oa" [fillcolor=chartreuse4, label="trilinos"]
 
-  "xsdk" -> "plasma"
-  "petsc" -> "superlu-dist"
-  "xsdk" -> "magma"
-  "xsdk" -> "dealii"
-  "xsdk" -> "superlu-dist"
-  "xsdk" -> "alquimia"
-  "mfem" -> "sundials"
-  "xsdk" -> "phist"
-  "alquimia" -> "petsc"
-  "xsdk" -> "petsc"
-  "alquimia" -> "pflotran"
-  "xsdk" -> "omega-h"
-  "dealii" -> "trilinos"
-  "pflotran" -> "petsc"
-  "sundials" -> "hypre"
-  "mfem" -> "superlu-dist"
-  "xsdk" -> "pflotran"
-  "slepc" -> "petsc"
-  "mfem" -> "hypre"
-  "xsdk" -> "pumi"
-  "dealii" -> "sundials"
-  "petsc" -> "hypre"
-  "xsdk" -> "amrex"
-  "dealii" -> "petsc"
-  "xsdk" -> "slepc"
-  "trilinos" -> "hypre"
-  "trilinos" -> "superlu-dist"
-  "xsdk" -> "hypre"
-  "petsc" -> "trilinos"
-  "phist" -> "trilinos"
-  "tasmanian" -> "magma"
-  "xsdk" -> "mfem"
-  "xsdk" -> "sundials"
-  "xsdk" -> "trilinos"
-  "xsdk" -> "strumpack"
-  "xsdk" -> "tasmanian"
-  "mfem" -> "petsc"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "ogoduruxhivphtnrm5iw54p7owc32fil"
+  "vxkw6axoyqnxbzhm757aftnpyzfxnrnh" -> "vipjljsq3l6iyov6uefgom7wsomfa5g7"
+  "zmt2y4g4ragnrrj2n7p2umquauspemfr" -> "vipjljsq3l6iyov6uefgom7wsomfa5g7"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "bf2j4wpyfhy5wnw5ufx5gewmsnukv5o2"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "awap2lxtn3ieyvog3gopmnlsvw5uct2t"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "6pzpw3ytvkzyvwo4g3fevp3rxfgp24eg"
+  "wniu3rsthceuc2pwvurixqjztlu2eaes" -> "vxkw6axoyqnxbzhm757aftnpyzfxnrnh"
+  "6pzpw3ytvkzyvwo4g3fevp3rxfgp24eg" -> "g5xuwd6wntqlertqazthpyx4r4niw4wy"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "6olhmyu5ahuemrjkfeaqwhcytmoqsw6f"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "fiirrckvfdofa7vxreyye5d2pzuzx2kq"
+  "6pzpw3ytvkzyvwo4g3fevp3rxfgp24eg" -> "s5353jlq47xttcpvmjfcxwhcbmayk2oa"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "qvwmdggbatjbfqawuqg26lg5hwobgx3f"
+  "wniu3rsthceuc2pwvurixqjztlu2eaes" -> "qvwmdggbatjbfqawuqg26lg5hwobgx3f"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "igz7cztywsgf3j6rl3nwzmso5iobos57"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "vipjljsq3l6iyov6uefgom7wsomfa5g7"
+  "s5353jlq47xttcpvmjfcxwhcbmayk2oa" -> "fiirrckvfdofa7vxreyye5d2pzuzx2kq"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "5yuwhvfvsw2igjvul4ofawsgyxsjit5s"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "i3qsw6qybsk3jajzlsebdz2oa3lupfww"
+  "s5353jlq47xttcpvmjfcxwhcbmayk2oa" -> "qvwmdggbatjbfqawuqg26lg5hwobgx3f"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "vxkw6axoyqnxbzhm757aftnpyzfxnrnh"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "g5xuwd6wntqlertqazthpyx4r4niw4wy"
+  "g5xuwd6wntqlertqazthpyx4r4niw4wy" -> "vipjljsq3l6iyov6uefgom7wsomfa5g7"
+  "tiigylkurixvuf6zoq4hfcpxqj532wun" -> "u2ie4mycr4ugxoda7rtt4ukcwlft775q"
+  "sso7dts2ujz7btjoaoyebynxotlavjby" -> "i3qsw6qybsk3jajzlsebdz2oa3lupfww"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "s5353jlq47xttcpvmjfcxwhcbmayk2oa"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "u2ie4mycr4ugxoda7rtt4ukcwlft775q"
+  "vipjljsq3l6iyov6uefgom7wsomfa5g7" -> "qvwmdggbatjbfqawuqg26lg5hwobgx3f"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "en3ibmjrxarczhrptd4imvc6jdqupxxs"
+  "vipjljsq3l6iyov6uefgom7wsomfa5g7" -> "fiirrckvfdofa7vxreyye5d2pzuzx2kq"
+  "vxkw6axoyqnxbzhm757aftnpyzfxnrnh" -> "qvwmdggbatjbfqawuqg26lg5hwobgx3f"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "k2kpo4kgnlazmxsb2yvre2baxcycnuul"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "sso7dts2ujz7btjoaoyebynxotlavjby"
+  "wniu3rsthceuc2pwvurixqjztlu2eaes" -> "vipjljsq3l6iyov6uefgom7wsomfa5g7"
+  "vxkw6axoyqnxbzhm757aftnpyzfxnrnh" -> "fiirrckvfdofa7vxreyye5d2pzuzx2kq"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "tiigylkurixvuf6zoq4hfcpxqj532wun"
+  "vipjljsq3l6iyov6uefgom7wsomfa5g7" -> "s5353jlq47xttcpvmjfcxwhcbmayk2oa"
+  "qvwmdggbatjbfqawuqg26lg5hwobgx3f" -> "fiirrckvfdofa7vxreyye5d2pzuzx2kq"
+  "wniu3rsthceuc2pwvurixqjztlu2eaes" -> "fiirrckvfdofa7vxreyye5d2pzuzx2kq"
+  "en3ibmjrxarczhrptd4imvc6jdqupxxs" -> "s5353jlq47xttcpvmjfcxwhcbmayk2oa"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "zmt2y4g4ragnrrj2n7p2umquauspemfr"
+  "72rnz4jy4erijxsg2k5riktxaur62oht" -> "ogoduruxhivphtnrm5iw54p7owc32fil"
+  "igz7cztywsgf3j6rl3nwzmso5iobos57" -> "s5353jlq47xttcpvmjfcxwhcbmayk2oa"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "72rnz4jy4erijxsg2k5riktxaur62oht"
+  "3bsf2gwsplov7yg6h6j2qkrypuqhw2n5" -> "wniu3rsthceuc2pwvurixqjztlu2eaes"
+  "ogoduruxhivphtnrm5iw54p7owc32fil" -> "vipjljsq3l6iyov6uefgom7wsomfa5g7"
+  "6pzpw3ytvkzyvwo4g3fevp3rxfgp24eg" -> "vipjljsq3l6iyov6uefgom7wsomfa5g7"
 }

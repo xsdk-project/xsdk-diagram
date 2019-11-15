@@ -1,26 +1,43 @@
 diff --git a/lib/spack/spack/graph.py b/lib/spack/spack/graph.py
-index 9a1571d75..db3bdcb7d 100644
+index 9a1571d75..3c9e395f1 100644
 --- a/lib/spack/spack/graph.py
 +++ b/lib/spack/spack/graph.py
-@@ -527,6 +527,8 @@ def graph_dot(specs, deptype='all', static=False, out=None):
+@@ -515,23 +515,29 @@ def graph_dot(specs, deptype='all', static=False, out=None):
+             edges.update((name, d) for d in deps)
+         return nodes, edges
+ 
+-    def dynamic_graph(spec, deptypes):
++    def dynamic_graph(spec, deps, deptypes):
+         nodes = set()  # elements are (node key, node label)
+         edges = set()  # elements are (src key, dest key)
+         for s in spec.traverse(deptype=deptype):
+-            nodes.add((s.dag_hash(), s.name))
++            if deps is None or s.name in deps:
++                nodes.add((s.dag_hash(), s.name))
+             for d in s.dependencies(deptype=deptype):
+-                edge = (s.dag_hash(), d.dag_hash())
+-                edges.add(edge)
++                if deps is None or s.name in deps and d.name in deps:
++                    edges.add((s.dag_hash(), d.dag_hash()))
+         return nodes, edges
  
      nodes = set()
      edges = set()
 +    names = set()
-+    dependencies = set()
++    depen = set()
      for spec in specs:
++        names.add(spec.format('{name}'))
++        depen |= get_dependencies(spec, deptype)
          if static:
              n, e = static_graph(spec, deptype)
-@@ -534,6 +536,8 @@ def graph_dot(specs, deptype='all', static=False, out=None):
-             n, e = dynamic_graph(spec, deptype)
+         else:
+-            n, e = dynamic_graph(spec, deptype)
++            n, e = dynamic_graph(spec, None, deptype) # full graph
++            # n, e = dynamic_graph(spec, depen | names, deptype) # just xsdk
          nodes.update(n)
          edges.update(e)
-+        names.add(spec.format('{name}'))
-+        dependencies |= get_dependencies(spec, deptype)
  
-     out.write('digraph G {\n')
-     out.write('  labelloc = "b"\n')
-@@ -548,15 +552,42 @@ def graph_dot(specs, deptype='all', static=False, out=None):
+@@ -548,15 +554,42 @@ def graph_dot(specs, deptype='all', static=False, out=None):
      out.write('     fontsize=24,\n')
      out.write('     margin=.2,\n')
      out.write('     shape=box,\n')
@@ -34,8 +51,8 @@ index 9a1571d75..db3bdcb7d 100644
      for key, label in nodes:
 -        out.write('  "%s" [label="%s"]\n' % (key, label))
 +        if label in names:
-+            out.write('  "%s" label="%s"]\n' % (key, label))
-+        elif label in dependencies:
++            out.write('  "%s" [label="%s"]\n' % (key, label))
++        elif label in depen:
 +            out.write('  "%s" [fillcolor=chartreuse4, label="%s"]\n' % (key, label))
 +        else:
 +            out.write('  "%s" [fillcolor=gray23, label="%s"]\n' % (key, label))
