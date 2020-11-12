@@ -1,0 +1,10 @@
+spack graph -d xsdk+cuda ^openblas@0.3.5 ^hwloc@1.999 ^magma cuda_arch=60 > xsdk.dot
+
+egrep -v '(yscpz2kynmdxjogx62xwwvhmmqmvfhsy|...) xsdk.dot > xsdk060.dot
+
+<edit xsdk060.dot, update header and coulors>
+
+dot -Tpdf xsdk060.dot  > xsdk060.pdf
+
+convert xsdk060.pdf xsdk060.jpg
+
