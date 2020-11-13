@@ -18,9 +18,8 @@ node[
      fontcolor=white,
      style="rounded,filled"]
 
-     "member" [label="Member" fillcolor="chartreuse4"]
-     "build" [label="Build Dependency" fillcolor="lightskyblue3"]
-     "link" [label="Link Dependency" fillcolor="gray23"]
+     "member" [label="xSDK Member" fillcolor="chartreuse4"]
+     "dependency" [label=" Dependency" fillcolor="#555555"]
 
-      member -> build -> link [style=invis]
+      member -> dependency [style=invis]
   }

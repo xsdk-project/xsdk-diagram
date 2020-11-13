@@ -3,10 +3,15 @@ This is a diagram of the [xSDK](https://xsdk.info).
 To get an updated graph, use [Spack](https://github.com/spack/spack):
 
 ```
-spack graph --dot xsdk > xsdk.dot
+spack graph -d xsdk+cuda ^openblas@0.3.5 ^hwloc@1.999 ^magma cuda_arch=60 > xsdk.dot
+
+egrep -v '(yscpz2kynmdxjogx62xwwvhmmqmvfhsy|...)' xsdk.dot > xsdk.dot
+
+# <edit xsdk.dot, update header and colors>
+echo "$(./color_graph.py xsdk.dot)" > xsdk.dot
+
+dot -Tpdf xsdk.dot  > xsdk.pdf
+
+convert xsdk.pdf xsdk.jpg
+
 ```
-
-You can then edit the `.dot` file to look more like the ones here.
-
-To edit the `.graffle` file, you need
-[Omnigraffle](https://www.omnigroup.com/omnigraffle).
