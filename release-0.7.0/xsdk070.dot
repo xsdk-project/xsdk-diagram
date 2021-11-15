@@ -1,0 +1,109 @@
+digraph G {
+  labelloc = "b"
+  rankdir = "TB"
+  ranksep = "1"
+
+edge[
+     penwidth = "2"
+     color = "#333333"
+     arrowsize = "3"
+]
+node[
+     fontname=Arial,
+     penwidth=2,
+     fontsize=48,
+     margin=.1,
+     shape=box,
+     fillcolor="#555555",
+     fontcolor=white,
+     style="rounded,filled"
+]
+
+  "ho2rfcl3etvy5pwlqhpzvozvy2rvczjf" [label="precice",fillcolor=chartreuse4]
+  "m4jxan7jib4diu7db6ggaxjdih6susy3" [label="magma",fillcolor=chartreuse4]
+  "v4ijv55gsnqqa3yyzkadmg676lob4dyn" [label="hypre",fillcolor=chartreuse4]
+  "adp3hwefuyc5c5n363bu6yb5dfimboem" [label="tasmanian",fillcolor=chartreuse4]
+  "umondjvm4sxqjnxrorbv33mitfcedngv" [label="butterflypack",fillcolor=chartreuse4]
+  "nat62wbu3hxn3e4zxeihhmdgwrl6kuhc" [label="superlu-dist",fillcolor=chartreuse4]
+  "njnwpj3ldltqahrmr6kzdgzg3lmaljod" [label="py-petsc4py",fillcolor=chartreuse2]
+  "cbgwz5hdurrlxvjb7dv6c7zav227eujd" [label="trilinos",fillcolor=chartreuse4]
+  "uivrw4nzysqjpehtyxwquap4wpzeahyc" [label="arborx",fillcolor=chartreuse4]
+  "2ugqif53kq2u2ncxttz3d3tgnfns44om" [label="plasma",fillcolor=chartreuse4]
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" [label="xsdk",fillcolor=brown]
+  "4nnjd34furzlu7lahgwuuljtf4ii57dt" [label="pumi",fillcolor=chartreuse4]
+  "ljcs62fycx7ewaic6735kuwosofustpd" [label="omega-h",fillcolor=chartreuse4]
+  "yxqku73rngcax2aino7wbb3ysrtilo26" [label="ginkgo",fillcolor=chartreuse4]
+  "ytnwda5nox2ah2avaaxsbutcxq6fgvdu" [label="pflotran",fillcolor=chartreuse4]
+  "7evfsbyexhqmfpcdp4vrqgiv2cywaxws" [label="slate",fillcolor=chartreuse4]
+  "h5zwucj4udjdccrfh7fe27ybwokwty45" [label="dealii",fillcolor=chartreuse4]
+  "7rgnthhgq3qcawlfl574fymqsfgqqz4j" [label="phist",fillcolor=chartreuse4]
+  "v4b3u6b3yeivn6bqs2mppqvjbgacpn6k" [label="strumpack",fillcolor=chartreuse4]
+  "j6kz5ltyehwsn4u5x5lewocdf36c4fjz" [label="alquimia",fillcolor=chartreuse4]
+  "r65trvawueb3du5ioqakvf6jp4aps2ti" [label="petsc",fillcolor=chartreuse4]
+  "dvi3twy7ujxjkcaimruuskiekxyhnlki" [label="sundials",fillcolor=chartreuse4]
+  "7vvdcyjbssnglskrvmgptz5x3uezbmlj" [label="amrex",fillcolor=chartreuse4]
+  "ouq7a4x2lzpm7bcvvipjvxyclk7jy5s2" [label="py-libensemble",fillcolor=chartreuse4]
+  "hqwr5tzq5ps22uxzmfqpd5rus3tiotwd" [label="mfem",fillcolor=chartreuse4]
+  "7ukqpxvn5zaacnnyhahicz2iffpgbzzi" [label="slepc",fillcolor=chartreuse4]
+  "w2kfcph2oksybsk2sho3z4tqr63whcyr" [label="heffte",fillcolor=chartreuse4]
+  "52lv2obcyzj5jgkzkgwgwtuxml2sbg7y" [label="datatransferkit",fillcolor=chartreuse4]
+
+  "njnwpj3ldltqahrmr6kzdgzg3lmaljod" -> "r65trvawueb3du5ioqakvf6jp4aps2ti"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "njnwpj3ldltqahrmr6kzdgzg3lmaljod"
+  "ljcs62fycx7ewaic6735kuwosofustpd" -> "cbgwz5hdurrlxvjb7dv6c7zav227eujd"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "2ugqif53kq2u2ncxttz3d3tgnfns44om"
+  "cbgwz5hdurrlxvjb7dv6c7zav227eujd" -> "nat62wbu3hxn3e4zxeihhmdgwrl6kuhc"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "v4b3u6b3yeivn6bqs2mppqvjbgacpn6k"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "7vvdcyjbssnglskrvmgptz5x3uezbmlj"
+  "dvi3twy7ujxjkcaimruuskiekxyhnlki" -> "r65trvawueb3du5ioqakvf6jp4aps2ti"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "ytnwda5nox2ah2avaaxsbutcxq6fgvdu"
+  "dvi3twy7ujxjkcaimruuskiekxyhnlki" -> "cbgwz5hdurrlxvjb7dv6c7zav227eujd"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "ouq7a4x2lzpm7bcvvipjvxyclk7jy5s2"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "uivrw4nzysqjpehtyxwquap4wpzeahyc"
+  "7rgnthhgq3qcawlfl574fymqsfgqqz4j" -> "cbgwz5hdurrlxvjb7dv6c7zav227eujd"
+  "hqwr5tzq5ps22uxzmfqpd5rus3tiotwd" -> "nat62wbu3hxn3e4zxeihhmdgwrl6kuhc"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "adp3hwefuyc5c5n363bu6yb5dfimboem"
+  "hqwr5tzq5ps22uxzmfqpd5rus3tiotwd" -> "dvi3twy7ujxjkcaimruuskiekxyhnlki"
+  "hqwr5tzq5ps22uxzmfqpd5rus3tiotwd" -> "v4ijv55gsnqqa3yyzkadmg676lob4dyn"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "v4ijv55gsnqqa3yyzkadmg676lob4dyn"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "7rgnthhgq3qcawlfl574fymqsfgqqz4j"
+  "h5zwucj4udjdccrfh7fe27ybwokwty45" -> "cbgwz5hdurrlxvjb7dv6c7zav227eujd"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "7evfsbyexhqmfpcdp4vrqgiv2cywaxws"
+  "r65trvawueb3du5ioqakvf6jp4aps2ti" -> "nat62wbu3hxn3e4zxeihhmdgwrl6kuhc"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "7ukqpxvn5zaacnnyhahicz2iffpgbzzi"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "r65trvawueb3du5ioqakvf6jp4aps2ti"
+  "dvi3twy7ujxjkcaimruuskiekxyhnlki" -> "nat62wbu3hxn3e4zxeihhmdgwrl6kuhc"
+  "adp3hwefuyc5c5n363bu6yb5dfimboem" -> "m4jxan7jib4diu7db6ggaxjdih6susy3"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "j6kz5ltyehwsn4u5x5lewocdf36c4fjz"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "hqwr5tzq5ps22uxzmfqpd5rus3tiotwd"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "ljcs62fycx7ewaic6735kuwosofustpd"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "52lv2obcyzj5jgkzkgwgwtuxml2sbg7y"
+  "7vvdcyjbssnglskrvmgptz5x3uezbmlj" -> "dvi3twy7ujxjkcaimruuskiekxyhnlki"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "ho2rfcl3etvy5pwlqhpzvozvy2rvczjf"
+  "ytnwda5nox2ah2avaaxsbutcxq6fgvdu" -> "r65trvawueb3du5ioqakvf6jp4aps2ti"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "yxqku73rngcax2aino7wbb3ysrtilo26"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "nat62wbu3hxn3e4zxeihhmdgwrl6kuhc"
+  "h5zwucj4udjdccrfh7fe27ybwokwty45" -> "7ukqpxvn5zaacnnyhahicz2iffpgbzzi"
+  "w2kfcph2oksybsk2sho3z4tqr63whcyr" -> "m4jxan7jib4diu7db6ggaxjdih6susy3"
+  "ouq7a4x2lzpm7bcvvipjvxyclk7jy5s2" -> "njnwpj3ldltqahrmr6kzdgzg3lmaljod"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "4nnjd34furzlu7lahgwuuljtf4ii57dt"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "umondjvm4sxqjnxrorbv33mitfcedngv"
+  "52lv2obcyzj5jgkzkgwgwtuxml2sbg7y" -> "cbgwz5hdurrlxvjb7dv6c7zav227eujd"
+  "hqwr5tzq5ps22uxzmfqpd5rus3tiotwd" -> "r65trvawueb3du5ioqakvf6jp4aps2ti"
+  "cbgwz5hdurrlxvjb7dv6c7zav227eujd" -> "v4ijv55gsnqqa3yyzkadmg676lob4dyn"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "w2kfcph2oksybsk2sho3z4tqr63whcyr"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "h5zwucj4udjdccrfh7fe27ybwokwty45"
+  "ho2rfcl3etvy5pwlqhpzvozvy2rvczjf" -> "r65trvawueb3du5ioqakvf6jp4aps2ti"
+  "h5zwucj4udjdccrfh7fe27ybwokwty45" -> "r65trvawueb3du5ioqakvf6jp4aps2ti"
+  "7ukqpxvn5zaacnnyhahicz2iffpgbzzi" -> "r65trvawueb3du5ioqakvf6jp4aps2ti"
+  "j6kz5ltyehwsn4u5x5lewocdf36c4fjz" -> "ytnwda5nox2ah2avaaxsbutcxq6fgvdu"
+  "v4ijv55gsnqqa3yyzkadmg676lob4dyn" -> "nat62wbu3hxn3e4zxeihhmdgwrl6kuhc"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "m4jxan7jib4diu7db6ggaxjdih6susy3"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "dvi3twy7ujxjkcaimruuskiekxyhnlki"
+  "nx2m2pk5civ2uuck75hqkpynpoum7tk6" -> "cbgwz5hdurrlxvjb7dv6c7zav227eujd"
+  "v4b3u6b3yeivn6bqs2mppqvjbgacpn6k" -> "umondjvm4sxqjnxrorbv33mitfcedngv"
+  "r65trvawueb3du5ioqakvf6jp4aps2ti" -> "v4ijv55gsnqqa3yyzkadmg676lob4dyn"
+  "dvi3twy7ujxjkcaimruuskiekxyhnlki" -> "v4ijv55gsnqqa3yyzkadmg676lob4dyn"
+
+  { rank=min; "nx2m2pk5civ2uuck75hqkpynpoum7tk6"; }
+}

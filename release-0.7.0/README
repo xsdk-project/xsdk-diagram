@@ -1,0 +1,19 @@
+./bin/spack graph -d xsdk+cuda target=skylake_avx512 cuda_arch=70 ^cuda@11.2.0 ^openmpi > xsdk.dot
+
+copy xsdk.dot to xsdk070-full.dot and update header, fillcolor
+
+dot -Tpdf xsdk070-full.dot  -o xsdk070-full.pdf
+convert xsdk070-full.pdf xsdk070-full.jpg
+
+
+# remove packages without fillcolor
+
+# get the node-ids to eliminate
+grep  '"]' xsdk070-full.dot | cut -d '"' -f 2
+
+now use
+egrep -v '(yscpz2kynmdxjogx62xwwvhmmqmvfhsy|...) xsdk070-full.dot > xsdk070.dot
+
+
+copy over legend* spack-logo-text.jpg and create xsdk060-full-with-legend.odp
+
