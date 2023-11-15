@@ -1,0 +1,25 @@
+digraph legend {
+    style="solid"
+    penwidth="2"
+    fontname="Arial"
+    labelloc = "b"
+    rankdir = "TB"
+    ranksep = "0"
+    nodesep = ".1"
+    bgcolor = "transparent"
+
+node[
+     fontname=Arial,
+     penwidth=2,
+     fontsize=24,
+     margin=.1,
+     shape=box,
+     fillcolor=brown,
+     fontcolor=white,
+     style="rounded,filled"]
+
+     "member" [label="xSDK Member" fillcolor="chartreuse4"]
+     "dependency" [label=" Dependency" fillcolor="#555555"]
+
+      member -> dependency [style=invis]
+  }

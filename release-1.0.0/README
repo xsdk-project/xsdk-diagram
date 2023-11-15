@@ -1,0 +1,25 @@
+Tue Nov 14 10:32:08 PM CST 2023
+balay@petsc-gpu-01:/scratch/balay/spack.x$ ./bin/spack graph -d xsdk@1.0.0%gcc@11.4.0+cuda cuda_arch=80 > xsdk100-orig.dot
+
+cp xsdk100-orig.dot xsdk100-full.dot
+
+# update header, remove version numbers, update fillcolor
+dot -Tpdf xsdk100-full.dot  -o xsdk100-full.pdf
+convert xsdk100-full.pdf xsdk100-full.jpg
+
+# remove packages without fillcolor
+
+# get the node-ids to eliminate
+grep  '"]' xsdk100-full.dot | cut -d '"' -f 2
+
+now use
+egrep -v '(yscpz2kynmdxjogx62xwwvhmmqmvfhsy|...) xsdk100-full.dot > xsdk100.dot
+
+dot -Tpdf xsdk100.dot  -o xsdk100.pdf
+convert xsdk100.pdf xsdk100.jpg
+
+copy over legend* spack-logo-text.jpg and create xsdk0?0-full-with-legend.odp
+export as pdf [from oowriter]
+export as png [from evince]
+
+copy xsdk100-full-with-legend.png to a new name - and reformat using gthumb to 768x376 or such
