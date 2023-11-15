@@ -25,4 +25,4 @@ export as png [from evince]
 copy xsdk100-full-with-legend.png to a new name - and reformat using gthumb to 768x376 or such
 
 edit xsdk-slide-1.0.0.pptx with oowriter
-slide-show, take screenshot, and resize with gthumb [to about 850x...]
+slide-show, take screenshot, and remove border with gthumb
